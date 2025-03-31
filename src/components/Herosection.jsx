@@ -136,7 +136,7 @@ export default function Herosection() {
 
   return (
     <motion.div
-      className="flex flex-col gap-[39px]"
+      className="flex flex-col gap-[39px] mt-[100px]"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
