@@ -1,4 +1,27 @@
-/* @import "tailwindcss";
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+@theme {
+  --color-green-100: #39551b;
+  --color-green-200: #6dbb12;
+  --color-green-300: #707d63;
+  --color-yellow-100: #ff9500;
+  --color-yellow-200: #f6f4db;
+  --color-yellow-300: #fffff8;
+  --color-black-100: #000000;
+  --color-black-200: #7d7d7d;
+  --color-black-300: #98a2b3;
+  --color-black-400: #8b988b;
+  --color-black-500: #f4f4f4;
+}
+.footer {
+  background: url('../../public/Rectangle.png');
+  height: 638px;
+}
+/*
 
 :root {
   --background: #ffffff;
