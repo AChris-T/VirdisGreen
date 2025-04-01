@@ -26,10 +26,8 @@ export default function Navbar() {
       const currentScrollPos = window.pageYOffset;
       const scrollingDown = prevScrollPos < currentScrollPos;
 
-      // Set scrolled state - used for styling changes
       setScrolled(currentScrollPos > 20);
 
-      // Handle visibility based on scroll direction
       if (scrollingDown && currentScrollPos > 80) {
         setVisible(false);
       } else {
@@ -46,7 +44,6 @@ export default function Navbar() {
     };
   }, [prevScrollPos]);
 
-  // Navbar animations
   const navbarVariants = {
     visible: {
       y: 0,
@@ -71,7 +68,7 @@ export default function Navbar() {
   return (
     <AnimatePresence>
       <motion.div
-        className={`px-[39px] py-[16px] fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`px-[39px] max-w-[1512px]  mx-auto1 py-[16px] fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled ? 'bg-white shadow-md py-[12px]' : 'bg-transparent pt-[32px]'
         }`}
         initial="visible"
