@@ -64,7 +64,7 @@ export default function page() {
   return (
     <div className="py-[75px] px-2 md:px-[39px] gap-[10px] flex flex-col">
       <Toaster />
-      <div className="flex w-full  justify-between  flex-col lg:flex-row mt-[30px] md:mt-[105px] gap-[30px] lg:gap-[10%]">
+      <div className="flex w-full items-start  justify-between  flex-col lg:flex-row mt-[30px] md:mt-[85px] gap-[30px] lg:gap-[10%]">
         <div className="flex flex-col justify-center gap-[50px]  ">
           <h3 className="text-[38px] md:text-[80px] w-full font-semibold md:leading-24 text-green-100 lg:w-[647px] flex justify-center items-center text-center lg:text-start ">
             Your Next Big Opportunity Starts Here! 🚀
