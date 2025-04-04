@@ -7,6 +7,8 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import Vector from '../../../public/Vector.png';
 import Image from 'next/image';
+import emailjs from '@emailjs/browser';
+import { toast, Toaster } from 'sonner';
 
 export default function page() {
   const formik = useFormik({
@@ -25,14 +27,44 @@ export default function page() {
       message: Yup.string().required('Message cannot be empty'),
     }),
     onSubmit: (values, { resetForm }) => {
-      console.log('Form Submitted', values);
-      alert('Message sent successfully!');
-      resetForm();
+      const templateParams = {
+        full_name: values.fullName,
+        email: values.email,
+        inquiry_type: values.inquiryType,
+        message: values.message,
+      };
+
+      emailjs
+        .send(
+          'service_f2mzeip',
+          'template_opodawg',
+          templateParams,
+          '1esO0aga3_Y7FvYtT'
+        )
+        .then(
+          (result) => {
+            console.log('Email successfully sent!', result.text);
+            toast.success('Message sent successfully!', {
+              position: 'top-right', // Can be 'top-right', 'top-left', 'bottom-right', or 'bottom-left'
+              duration: 4000,
+              style: {
+                backgroundColor: '#4CAF50', // Custom green for success
+                color: 'white',
+              }, // Customize the duration (in milliseconds)
+            });
+            resetForm();
+          },
+          (error) => {
+            toast.error('Email sending failed');
+            alert('Failed to send message. Try again later.');
+          }
+        );
     },
   });
   return (
     <div className="py-[75px] px-2 md:px-[39px] gap-[10px] flex flex-col">
-      <div className="flex w-full  justify-between  flex-col lg:flex-row mt-[30px] md:mt-[105px] gap-[30px] lg:gap-[222px]">
+      <Toaster />
+      <div className="flex w-full  justify-between  flex-col lg:flex-row mt-[30px] md:mt-[105px] gap-[30px] lg:gap-[10%]">
         <div className="flex flex-col justify-center gap-[50px]  ">
           <h3 className="text-[38px] md:text-[80px] w-full font-semibold md:leading-24 text-green-100 lg:w-[647px] flex justify-center items-center text-center lg:text-start ">
             Your Next Big Opportunity Starts Here! 🚀
@@ -176,7 +208,7 @@ export default function page() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-green-100  text-yellow-200 font-semibold py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-green-700 transition"
+                className="w-full bg-green-100  text-yellow-200 font-semibold py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-green-100 cursor-pointer transition"
               >
                 Send Us A Message{' '}
                 <Image src={Vector} alt="" width={20} height={20} priority />

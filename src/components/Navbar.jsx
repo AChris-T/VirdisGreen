@@ -132,12 +132,12 @@ export default function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Image
-              src={group}
-              alt="Group Logo"
+          <Image
+            src={group}
+            alt="Group Logo"
               width={scrolled ? 100 : 117}
               height={scrolled ? 60 : 70}
-              priority
+            priority
               className="object-cover transition-all duration-300"
             />
           </motion.div>
@@ -150,8 +150,8 @@ export default function Navbar() {
                 transition={{ delay: index * 0.1, duration: 0.5 }}
               >
                 <NavLink href={href} pathname={pathname} scrolled={scrolled}>
-                  {name}
-                </NavLink>
+              {name}
+            </NavLink>
               </motion.div>
             ))}
           </div>
@@ -257,10 +257,10 @@ export default function Navbar() {
                     whileTap={{ scale: 0.98 }}
                     onClick={handleMobileMenuToggle}
                   >
-                    Book a Consultation
+          Book a Consultation
                   </motion.button>
-                </div>
-              </div>
+      </div>
+    </div>
             </motion.div>
           )}
         </AnimatePresence>
@@ -289,8 +289,8 @@ const NavLink = ({ href, pathname, children, scrolled }) => {
             scale: 1.05,
             color: '#00A870',
           }}
-        >
-          {children}
+      >
+        {children}
         </motion.span>
       </Link>
     </div>
