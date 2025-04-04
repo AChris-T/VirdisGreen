@@ -129,7 +129,7 @@ export default function Stories() {
   return (
     <motion.div
       ref={sectionRef}
-      className="bg-yellow-200 py-16 px-12 rounded-lg relative overflow-hidden"
+      className="bg-yellow-200 py-16 md:px-12 rounded-lg relative overflow-hidden"
       variants={containerVariants}
       initial="hidden"
       animate={controls}
@@ -144,13 +144,13 @@ export default function Stories() {
       {/* Heading */}
       <div className="mb-10 flex flex-col items-center w-full relative z-10">
         <motion.h2
-          className="text-4xl font-bold text-green-100 mb-4"
+          className="text-4xl text-center font-bold text-green-100 mb-4"
           variants={titleVariants}
         >
           Our Clients' Success Stories
         </motion.h2>
         <motion.p
-          className="text-black-400 text-center w-[570px] text-lg"
+          className="text-black-400 text-center md:w-[570px] text-lg"
           variants={titleVariants}
         >
           Our expertise helps businesses win contracts, streamline operations,
@@ -169,7 +169,7 @@ export default function Stories() {
         {testimonials.map((testimonial, index) => (
           <div
             key={testimonial.id}
-            className="bg-green-100 text-white p-8 rounded-lg flex-shrink-0 w-[400px] snap-center"
+            className="bg-green-100 text-white p-8 rounded-lg flex-shrink-0 w-[300px] md:w-[400px] snap-center"
             whilehover="hover"
           >
             <p className="text-lg font-medium mb-6 italic">

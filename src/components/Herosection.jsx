@@ -2,8 +2,38 @@
 import Image from 'next/image';
 import group from '../../public/Mask.png';
 import { motion } from 'framer-motion';
+import { useEffect, useRef } from 'react';
 
 export default function Herosection() {
+  const scrollRef = useRef(null);
+
+  useEffect(() => {
+    const container = scrollRef.current;
+
+    if (window.innerWidth <= 768 && container) {
+      let animationFrameId;
+      let scrollSpeed = 0.5; // px per frame — adjust this for speed
+
+      const autoScroll = () => {
+        container.scrollLeft += scrollSpeed;
+
+        // Reset to beginning if it reaches the end
+        if (
+          container.scrollLeft >=
+          container.scrollWidth - container.clientWidth
+        ) {
+          container.scrollLeft = 0;
+        }
+
+        animationFrameId = requestAnimationFrame(autoScroll);
+      };
+
+      animationFrameId = requestAnimationFrame(autoScroll);
+
+      return () => cancelAnimationFrame(animationFrameId);
+    }
+  }, []);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -136,14 +166,14 @@ export default function Herosection() {
 
   return (
     <motion.div
-      className="flex flex-col gap-[39px] mt-[100px]"
+      className="flex flex-col gap-[39px] mt-[30px] md:mt-[100px]"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
     >
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col lg:flex-row justify-between items-start">
         <motion.div
-          className="w-full flex-1/2 flex-col"
+          className="w-full flex justify-center items-center  lg:items-start flex-1/2 flex-col"
           variants={itemVariants}
         >
           <motion.h3
@@ -153,13 +183,13 @@ export default function Herosection() {
             Viridis Green
           </motion.h3>
           <motion.h2
-            className="font-semibold text-[72px] leading-22 w-[755px] text-green-100"
+            className="font-semibold text-[42px] md:text-[72px] text-center lg:text-start leading-14 md:leading-22 md:w-[755px] text-green-100"
             variants={titleVariants}
           >
             Transforming Business Challenges Into Competitive Advantages
           </motion.h2>
           <motion.h2
-            className="mt-5 w-[644px] text-black-400 text-[20px]"
+            className="mt-5 md:w-[644px] text-black-400 text-[18px] md:text-start text-center md:text-[20px]"
             variants={itemVariants}
           >
             At Viridis Green, we combine expertise in bid writing,
@@ -168,11 +198,11 @@ export default function Herosection() {
             landscape.
           </motion.h2>
           <motion.div
-            className="mt-5 flex gap-[17px]"
+            className="mt-5 flex gap-2 md:gap-[17px]"
             variants={buttonsContainerVariants}
           >
             <motion.button
-              className="px-[32px] text-[18px] font-semibold py-4 bg-green-100 cursor-pointer rounded-[12px] text-white"
+              className="px-4 md:px-[32px] md:text-[18px] font-semibold py-4 bg-green-100 cursor-pointer rounded-[12px] text-white"
               custom={0}
               variants={buttonVariants}
               whileHover="hover"
@@ -181,7 +211,7 @@ export default function Herosection() {
               Book a Consultation
             </motion.button>
             <motion.button
-              className="px-[32px] text-[18px] font-semibold py-4 text-green-100 cursor-pointer rounded-[12px] border-[2px] border-green-100"
+              className="px-4 md:px-[32px] md:text-[18px] font-semibold py-4 text-green-100 cursor-pointer rounded-[12px] border-[2px] border-green-100"
               custom={1}
               variants={buttonVariants}
               whileHover="hover"
@@ -190,8 +220,54 @@ export default function Herosection() {
               Explore Our Services
             </motion.button>
           </motion.div>
+          <div
+            ref={scrollRef}
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+            className=" w-full overflow-x-auto no-scrollbar "
+          >
+            <motion.div
+              className="grid mt-[50px] grid-cols-5 lg:grid-cols-3  w-[1200px] lg:w-[750px] gap-3"
+              variants={badgesContainerVariants}
+            >
+              <motion.button
+                className="text-base font-medium text-green-100 border-[1.5px] rounded-full border-black-500 px-4 py-3"
+                variants={badgeVariants}
+                whileHover="hover"
+              >
+                🏆 78% Bid Success Rate
+              </motion.button>
+              <motion.button
+                className="text-base font-medium text-green-100 border-[1.5px] rounded-full border-black-500 px-4 py-3"
+                variants={badgeVariants}
+                whileHover="hover"
+              >
+                🌎 78% Global Experience
+              </motion.button>
+              <motion.button
+                className="text-base font-medium text-green-100 border-[1.5px] rounded-full border-black-500 px-4 py-3"
+                variants={badgeVariants}
+                whileHover="hover"
+              >
+                ⚖️ Compliance Focused
+              </motion.button>
+              <motion.button
+                className="text-base font-medium text-green-100 border-[1.5px] rounded-full border-black-500 px-4 py-3"
+                variants={badgeVariants}
+                whileHover="hover"
+              >
+                🔗 Integrated Solutions
+              </motion.button>
+              <motion.button
+                className="text-base font-medium text-green-100 border-2 rounded-full border-black-500 px-4 py-3"
+                variants={badgeVariants}
+                whileHover="hover"
+              >
+                📊 Measurable Results
+              </motion.button>
+            </motion.div>
+          </div>
         </motion.div>
-        <motion.div className="flex-1/4" variants={imageVariants}>
+        <motion.div className="flex-1/4 mt-10 lg:mt-0" variants={imageVariants}>
           <Image
             src={group}
             alt="Group Logo"
@@ -202,46 +278,6 @@ export default function Herosection() {
           />
         </motion.div>
       </div>
-      <motion.div
-        className="grid grid-cols-3 w-[750px] gap-3"
-        variants={badgesContainerVariants}
-      >
-        <motion.button
-          className="bg-yellow-200 text-base font-medium text-green-100 border-2 rounded-full border-green-100 px-4 py-3"
-          variants={badgeVariants}
-          whileHover="hover"
-        >
-          🏆 78% Bid Success Rate
-        </motion.button>
-        <motion.button
-          className="bg-yellow-200 text-base font-medium text-green-100 border-2 rounded-full border-green-100 px-4 py-3"
-          variants={badgeVariants}
-          whileHover="hover"
-        >
-          🌎 78% Global Experience
-        </motion.button>
-        <motion.button
-          className="bg-yellow-200 text-base font-medium text-green-100 border-2 rounded-full border-green-100 px-4 py-3"
-          variants={badgeVariants}
-          whileHover="hover"
-        >
-          ⚖️ Compliance Focused
-        </motion.button>
-        <motion.button
-          className="bg-yellow-200 text-base font-medium text-green-100 border-2 rounded-full border-green-100 px-4 py-3"
-          variants={badgeVariants}
-          whileHover="hover"
-        >
-          🔗 Integrated Solutions
-        </motion.button>
-        <motion.button
-          className="bg-yellow-200 text-base font-medium text-green-100 border-2 rounded-full border-green-100 px-4 py-3"
-          variants={badgeVariants}
-          whileHover="hover"
-        >
-          📊 IMeasurable Results
-        </motion.button>
-      </motion.div>
     </motion.div>
   );
 }

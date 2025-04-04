@@ -1,33 +1,40 @@
 import React from 'react';
-import group from '../../public/Group.png';
+import group from '../../public/Log.png';
+import vary from '../../public/var.png';
+import arrow from '../../public/arrow.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import FacebookIcon from '../../public/icons/FacebookIcon';
 import TwitterIcon from '../../public/icons/TwitterIcon';
 import InstagramIcon from '../../public/icons/InstagramIcon';
 import LinkdinIcon from '../../public/icons/LinkdinIcon';
+import Arrow from '../../public/icons/Arrow';
 
 export default function Footer() {
   return (
     <div>
-      <div className="footer w-full px-[134px] gap-5 flex flex-col justify-center items-center ">
+      <div className="footer w-full md:px-[134px] gap-5 flex flex-col justify-center items-center ">
         <Image
           src={group}
           alt="Group Logo"
           width={117}
           height={70}
           priority
-          className="object-cover"
+          className="object-cover z-10"
         />
-        <h3 className="font-semibold text-green-100 leading-20  text-[68px] text-center">
+        <h3 className="font-semibold z-10 text-green-100 lg:leading-20 leading-12 text-[42px] lg:text-[68px] text-center">
           Let’s Work Together to Secure Your Next Big Opportunity
         </h3>
-        <p className="text-green-300 text-lg font-medium">
+        <p className="text-green-300 z-10 text-lg font-medium text-center">
           We’re ready to help you win more contracts and optimize your business
           strategy.
         </p>
+        <button className="z-10 px-[30px] py-[15px] text-white bg-green-100 rounded-[10px] font-semibold text-[18px] gap-2 flex items-center">
+          Get Started
+          <Arrow />
+        </button>
       </div>
-      <div className="bg-yellow-200 h-[285px] flex-col flex justify-center items-center">
+      <div className="bg-yellow-200 py-10 md:h-[285px] flex-col flex justify-center items-center">
         <Image
           src={group}
           alt="Group Logo"
@@ -36,7 +43,7 @@ export default function Footer() {
           priority
           className="object-cover"
         />
-        <div className="mt-6 flex gap-4 justify-center items-center">
+        <div className="mt-6 flex md:flex-row flex-col gap-4 justify-center items-center">
           <Link href="/" className="text-black-300 text-base ">
             Home
           </Link>

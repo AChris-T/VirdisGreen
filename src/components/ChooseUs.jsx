@@ -5,6 +5,12 @@ import BagIcon from '../../public/icons/BagIcon';
 import BarIcon from '../../public/icons/BarIcon';
 import ProgressIcon from '../../public/icons/ProgressIcon';
 import Rocket from '../../public/icons/Rocket';
+import Cup from '../../public/Cup.png';
+import Glob from '../../public/Glob.png';
+import chain from '../../public/chain.png';
+import balance from '../../public/balance.png';
+import chart from '../../public/chart.png';
+import Image from 'next/image';
 
 export default function ChooseUs() {
   // Create animation controls
@@ -100,6 +106,8 @@ export default function ChooseUs() {
     hover: {
       boxShadow: '0px 10px 25px rgba(0, 0, 0, 0.08)',
       borderColor: '#00A870',
+      backgroundColor: '#f6f4db',
+      scale: 1.01,
       transition: {
         type: 'spring',
         stiffness: 300,
@@ -133,27 +141,27 @@ export default function ChooseUs() {
 
   const cardData = [
     {
-      icon: <BagIcon />,
+      icon: Cup.src,
       title: 'Proven Expertise',
       description: '85% bid success—helping businesses win more contracts.',
     },
     {
-      icon: <BarIcon />,
+      icon: Glob.src,
       title: 'Global Experience',
       description: 'UK-based industry experts with global expertise.',
     },
     {
-      icon: <ProgressIcon />,
+      icon: balance.src,
       title: 'Compliance Focused',
       description: 'Ensuring regulatory excellence in every project.',
     },
     {
-      icon: <Rocket />,
+      icon: chain.src,
       title: 'Integrated Solutions',
       description: 'Integrated approach to complex business challenges.',
     },
     {
-      icon: <Rocket />,
+      icon: chart.src,
       title: 'Measurable Results',
       description: 'Measurable ROI on all our service engagements.',
     },
@@ -169,13 +177,13 @@ export default function ChooseUs() {
     >
       <motion.div variants={headingVariants}>
         <motion.h3
-          className="font-bold text-[42px] text-green-100"
+          className="font-bold text-center text-[42px] text-green-100"
           variants={titleVariants}
         >
           Why Choose Viridis Green?
         </motion.h3>
         <motion.p
-          className="text-black-200 w-[644px] text-center mt-3"
+          className="text-black-200   md:w-[644px] text-center mt-3"
           variants={titleVariants}
         >
           With a proven track record in bids, sustainability, and business
@@ -184,12 +192,12 @@ export default function ChooseUs() {
         </motion.p>
       </motion.div>
 
-      <div className="w-full mt-[50px] px-[114px]" ref={cardsRef}>
-        <div className="grid grid-cols-3 gap-8 items-stretch mb-8">
+      <div className="w-full mt-[50px] lg:px-[114px]" ref={cardsRef}>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch mb-8">
           {cardData.slice(0, 3).map((card, index) => (
             <motion.div
               key={index}
-              className="px-[10px] h-[250px] w-full border-2 rounded-[21px] flex flex-col gap-5 justify-center items-center border-black-500 py-[43px]"
+              className="px-[10px]  h-[250px] w-full border-2 rounded-[21px] flex flex-col gap-5 justify-center items-center border-black-500 py-[43px]"
               custom={index}
               variants={cardVariants}
               initial="hidden"
@@ -197,7 +205,7 @@ export default function ChooseUs() {
               whileHover="hover"
             >
               <motion.div variants={iconVariants} whileHover="hover">
-                {card.icon}
+                <Image src={card.icon} alt="" priority height={50} width={50} />
               </motion.div>
               <div className="flex flex-col items-center">
                 <h3 className="font-semibold text-center text-lg text-green-100 mt-1">
@@ -212,10 +220,10 @@ export default function ChooseUs() {
         </div>
 
         {/* Centered second row */}
-        <div className="flex justify-center gap-8">
+        <div className="flex md:flex-row flex-col justify-center gap-8">
           <motion.div
             key="row2-card"
-            className="px-[10px] h-[250px] w-[30%] border-2 rounded-[21px] flex flex-col gap-5 justify-center items-center border-black-500 py-[43px]"
+            className="px-[10px] h-[250px] w-full md:w-[30%] border-2 rounded-[21px] flex flex-col gap-5 justify-center items-center border-black-500 py-[43px]"
             custom={3}
             variants={cardVariants}
             initial="hidden"
@@ -223,7 +231,13 @@ export default function ChooseUs() {
             whileHover="hover"
           >
             <motion.div variants={iconVariants} whileHover="hover">
-              {cardData[3].icon}
+              <Image
+                src={cardData[3].icon}
+                alt=""
+                priority
+                height={50}
+                width={50}
+              />
             </motion.div>
             <div className="flex flex-col items-center">
               <h3 className="font-semibold text-center text-lg text-green-100 mt-1">
@@ -236,7 +250,7 @@ export default function ChooseUs() {
           </motion.div>
           <motion.div
             key="row3-card "
-            className="px-[10px] h-[250px] w-[30%] border-2 rounded-[21px] flex flex-col gap-5 justify-center items-center border-black-500 py-[43px]"
+            className="px-[10px] h-[250px] w-full md:w-[30%] border-2 rounded-[21px] flex flex-col gap-5 justify-center items-center border-black-500 py-[43px]"
             custom={3}
             variants={cardVariants}
             initial="hidden"
@@ -244,7 +258,13 @@ export default function ChooseUs() {
             whileHover="hover"
           >
             <motion.div variants={iconVariants} whileHover="hover">
-              {cardData[4].icon}
+              <Image
+                src={cardData[4].icon}
+                alt=""
+                priority
+                height={50}
+                width={50}
+              />
             </motion.div>
             <div className="flex flex-col items-center">
               <h3 className="font-semibold text-center text-lg text-green-100 mt-1">
