@@ -140,7 +140,7 @@ export default function OurWork() {
           What We Do{' '}
         </motion.h3>
         <motion.h2
-          className="font-semibold text-[42px] md:text-[70px] leading-14 md:leading-22 w-full lg:w-[700px] text-green-100"
+          className="font-semibold text-[38px] md:text-[70px] leading-14 md:leading-22 w-full lg:w-[700px] text-green-100"
           variants={textItemVariants}
         >
           Comprehensive Solutions for Business Success.{' '}

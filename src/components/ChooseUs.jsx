@@ -177,7 +177,7 @@ export default function ChooseUs() {
     >
       <motion.div variants={headingVariants}>
         <motion.h3
-          className="font-bold text-center text-[42px] text-green-100"
+          className="font-bold text-center text-[38px] md:text-[42px] text-green-100"
           variants={titleVariants}
         >
           Why Choose Viridis Green?

@@ -183,7 +183,7 @@ export default function Herosection() {
             Viridis Green
           </motion.h3>
           <motion.h2
-            className="font-semibold text-[42px] md:text-[72px] text-center lg:text-start leading-14 md:leading-22 md:w-[755px] text-green-100"
+            className="font-semibold text-[38px] md:text-[72px] text-center lg:text-start leading-14 md:leading-22 md:w-[755px] text-green-100"
             variants={titleVariants}
           >
             Transforming Business Challenges Into Competitive Advantages
@@ -202,7 +202,7 @@ export default function Herosection() {
             variants={buttonsContainerVariants}
           >
             <motion.button
-              className="px-4 md:px-[32px] md:text-[18px] font-semibold py-4 bg-green-100 cursor-pointer rounded-[12px] text-white"
+              className="px-4 md:px-[32px] text-[14px] md:text-[18px] font-semibold py-4 bg-green-100 cursor-pointer rounded-[12px] text-white"
               custom={0}
               variants={buttonVariants}
               whileHover="hover"
@@ -211,7 +211,7 @@ export default function Herosection() {
               Book a Consultation
             </motion.button>
             <motion.button
-              className="px-4 md:px-[32px] md:text-[18px] font-semibold py-4 text-green-100 cursor-pointer rounded-[12px] border-[2px] border-green-100"
+              className="px-4 md:px-[32px] text-[14px] md:text-[18px] font-semibold py-4 text-green-100 cursor-pointer rounded-[12px] border-[2px] border-green-100"
               custom={1}
               variants={buttonVariants}
               whileHover="hover"
