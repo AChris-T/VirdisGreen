@@ -5,13 +5,14 @@ import { motion, useInView } from 'framer-motion';
 import flower from '../../public/floweer.png';
 import frame from '../../public/AboutFrame.png';
 import Services from './Services';
+import CoreValues from './CoreValues';
 
 export default function AboutHero() {
   const containerRef = useRef(null);
   const isInView = useInView(containerRef, { once: false, amount: 0.2 });
 
   const containerVariants = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0.7 },
     visible: {
       opacity: 1,
       transition: {
@@ -22,7 +23,7 @@ export default function AboutHero() {
   };
 
   const textVariants = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 1, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
@@ -73,7 +74,7 @@ export default function AboutHero() {
         >
           <motion.h3
             variants={textVariants}
-            className="w-full px-3 lg:pr-18 text-center leading-12 md:leading-18 lg:text-start text-green-100 font-semibold flex justify-center md:text-[64px] text-[44px]"
+            className=" px-3 lg:pr-18 w-full lg:w-[800px] text-center leading-12 md:leading-18 lg:text-start text-green-100 font-semibold flex justify-center md:text-[64px] text-[44px]"
           >
             Your Trusted Partner in Bidding, Sustainability, & Business Growth
           </motion.h3>
@@ -91,12 +92,12 @@ export default function AboutHero() {
 
         <motion.div
           variants={decorativeImageVariants}
-          className="flex w-full lg:-mt-16 absolute right-0 top-0 lg:relative"
+          className="flex w-full lg:-mt-16 items-center justify-center right-0 top-0 lg:relative"
         >
           <Image
             src={flower}
             alt=""
-            className="w-full object-contain h-[500px]"
+            className="object-contain w-[500px] h-[460px]"
             priority
           />
         </motion.div>
@@ -106,7 +107,7 @@ export default function AboutHero() {
         <Image src={frame} alt="" className="w-full object-cover" priority />
       </motion.div>
       <div className="mt-[111px] flex flex-col justify-center items-center">
-        <h3 className="text-[64px] text-green-100 md:w-[800px] text-center w-full leading-16">
+        <h3 className="text-[64px] text-green-100 lg:w-[800px] text-center w-full leading-16">
           Viridis Green is not just{' '}
           <p className="relative  text-yellow-100 inline-block">
             another
@@ -114,14 +115,12 @@ export default function AboutHero() {
           </p>{' '}
           business consulting firm.
         </h3>
-        <p className="md:w-[800px] text-green-400 text-[18px] mt-[30px] leading-8 text-center w-full">
+        <p className="lg:w-[800px] text-green-400 text-[18px] mt-[30px] leading-8 text-center w-full">
           Viridis Green is more than a business consulting firm—we help
           companies win contracts, optimize operations, and implement
           sustainable, tech-driven solutions to stay competitive and grow.
         </p>
-        <div className="">
-          <Services />
-        </div>
+        <div></div>
       </div>
     </motion.div>
   );
