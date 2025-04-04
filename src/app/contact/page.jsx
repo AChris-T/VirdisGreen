@@ -107,7 +107,7 @@ export default function page() {
                 <input
                   type="text"
                   name="fullName"
-                  className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring focus:border-green-500"
+                  className="w-full px-4 border-[#8B988B] py-3 border rounded-lg focus:outline-none focus:ring focus:border-green-500"
                   {...formik.getFieldProps('fullName')}
                 />
                 {formik.touched.fullName && formik.errors.fullName ? (
@@ -125,7 +125,7 @@ export default function page() {
                 <input
                   type="email"
                   name="email"
-                  className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring focus:border-green-500"
+                  className="w-full px-4 border-[#8B988B] py-3 border rounded-lg focus:outline-none focus:ring focus:border-green-500"
                   {...formik.getFieldProps('email')}
                 />
                 {formik.touched.email && formik.errors.email ? (
@@ -140,7 +140,7 @@ export default function page() {
                 </label>
                 <select
                   name="inquiryType"
-                  className="w-full px-4 py-4 border rounded-lg focus:outline-none focus:ring focus:border-green-500"
+                  className="w-full px-4 py-4 border border-[#8B988B] rounded-lg focus:outline-none focus:ring focus:border-green-500"
                   {...formik.getFieldProps('inquiryType')}
                 >
                   <option value="">Select Option</option>
@@ -163,7 +163,7 @@ export default function page() {
                 <textarea
                   name="message"
                   rows={4}
-                  className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring focus:border-green-500"
+                  className="w-full px-4 py-3 border-[#8B988B] border rounded-lg focus:outline-none focus:ring focus:border-green-500"
                   {...formik.getFieldProps('message')}
                 ></textarea>
                 {formik.touched.message && formik.errors.message ? (
@@ -176,7 +176,7 @@ export default function page() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-green-100 text-yellow-200 font-semibold py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-green-700 transition"
+                className="w-full bg-green-100  text-yellow-200 font-semibold py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-green-700 transition"
               >
                 Send Us A Message{' '}
                 <Image src={Vector} alt="" width={20} height={20} priority />
