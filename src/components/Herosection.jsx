@@ -3,6 +3,7 @@ import Image from 'next/image';
 import group from '../../public/Mask.png';
 import { motion } from 'framer-motion';
 import { useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 export default function Herosection() {
   const scrollRef = useRef(null);
@@ -217,7 +218,9 @@ export default function Herosection() {
               whileHover="hover"
               whileTap="tap"
             >
-              Explore Our Services
+              <Link href="/service" className="w-full">
+                Explore Our Services
+              </Link>
             </motion.button>
           </motion.div>
           <div
