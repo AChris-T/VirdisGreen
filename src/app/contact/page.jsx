@@ -20,7 +20,7 @@ export default function page() {
       email: '',
       inquiryType: '',
       message: '',
-      BidSector: '',
+      //BidSector: '',
     },
     validationSchema: Yup.object({
       fullName: Yup.string().required('Full Name is required'),
@@ -28,7 +28,7 @@ export default function page() {
         .email('Invalid email address')
         .required('Email is required'),
       inquiryType: Yup.string().required('Please select an inquiry type'),
-      BidSector: Yup.string().required('Please select an inquiry type'),
+     // BidSector: Yup.string().required('Please select an inquiry type'),
       message: Yup.string().required('Message cannot be empty'),
     }),
     onSubmit: (values, { resetForm }) => {
@@ -38,7 +38,7 @@ export default function page() {
         email: values.email,
         inquiry_type: values.inquiryType,
         message: values.message,
-        BidSector: values.BidSector,
+       // BidSector: values.BidSector,
       };
 
       emailjs
@@ -211,7 +211,7 @@ export default function page() {
 
                 {/**Bid selector */}
 
-                <div className="flex flex-col gap-2">
+                {/* <div className="flex flex-col gap-2">
                   <label className="block font-bold text-green-100 text-sm">
                     Bid-Writing Sector{' '}
                   </label>
@@ -236,7 +236,7 @@ export default function page() {
                       {formik.errors.BidSector}
                     </p>
                   ) : null}
-                </div>
+                </div> */}
 
                 {/* Message */}
                 <div className="flex flex-col gap-2">
