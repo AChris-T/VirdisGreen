@@ -260,10 +260,8 @@ export default function page() {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className={`w-full ${
-                    isLoading
-                      ? ' cursor-not-allowed'
-                      : 'bg-green-100 cursor-pointer'
+                  className={`w-full bg-green-100 ${
+                    isLoading ? ' cursor-not-allowed' : ' cursor-pointer'
                   }  text-yellow-200 font-semibold py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-green-100  transition`}
                 >
                   {isLoading ? (
