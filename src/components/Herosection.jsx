@@ -237,14 +237,14 @@ export default function Herosection() {
                 variants={badgeVariants}
                 whileHover="hover"
               >
-                🏆 78% Bid Success Rate
+                🏆 85% Bid Success Rate
               </motion.button>
               <motion.button
                 className="text-base font-medium text-green-100 border-[1.5px] rounded-full border-black-500 px-4 py-3"
                 variants={badgeVariants}
                 whileHover="hover"
               >
-                🌎 78% Global Experience
+                🌎 80% Global Experience
               </motion.button>
               <motion.button
                 className="text-base font-medium text-green-100 border-[1.5px] rounded-full border-black-500 px-4 py-3"

@@ -9,9 +9,9 @@ import Menubar from '../../public/icons/Menubar';
 
 const NAV_LINKS = [
   { name: 'Home', href: '/' },
-  { name: 'Our Services', href: '/service' },
   /*   { name: 'Testimonials', href: '/testimonials' },
    */ { name: 'About Us', href: '/about' },
+  { name: 'Our Services', href: '/service' },
   { name: 'Contact', href: '/contact' },
 ];
 
