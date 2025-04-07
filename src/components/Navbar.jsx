@@ -132,14 +132,16 @@ export default function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Image
-              src={group}
-              alt="Group Logo"
-              width={scrolled ? 100 : 117}
-              height={scrolled ? 60 : 70}
-              priority
-              className="object-cover transition-all duration-300"
-            />
+            <Link href="/">
+              <Image
+                src={group}
+                alt="Group Logo"
+                width={scrolled ? 100 : 117}
+                height={scrolled ? 60 : 70}
+                priority
+                className="object-cover transition-all duration-300"
+              />
+            </Link>
           </motion.div>
           <div className="hidden lg:flex gap-4">
             {NAV_LINKS.map(({ name, href }, index) => (
