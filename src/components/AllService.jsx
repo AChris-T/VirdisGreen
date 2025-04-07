@@ -107,7 +107,7 @@ export default function AllService() {
           key={detail.id}
           variants={cardVariants}
           whileHover="hover"
-          className="w-full h-[451px] border-[2px] p-[30px] border-black-500 rounded-[2px] flex flex-col justify-between hover:shadow-lg hover:border-green-100 transition-colors duration-300"
+          className="w-full h-[451px] border-[2px] p-[30px] border-black-500 rounded-[30px] flex flex-col justify-between hover:shadow-lg  hover:bg-yellow-200 transition-colors duration-300"
         >
           <div>
             <motion.h3

@@ -1,46 +1,47 @@
 import Image from 'next/image';
 import React from 'react';
-import Frame from '../../public/Commodity.png';
-import brain from '../../public/company.png';
-import pen from '../../public/Glob.png';
-import checked from '../../public/cutlery.png';
-import search from '../../public/Retail.png';
-import Bridge from '../../public/bridge.png';
-import Health from '../../public/Health.png';
-import House from '../../public/Big.png';
-import Cup from '../../public/sheild.png';
-import Tools from '../../public/Bar.png';
-import Box from '../../public/Box.png';
+import Frame from '../../public/tech.png';
+import brain from '../../public/app.png';
+import pen from '../../public/web.png';
+import checked from '../../public/data.png';
+import search from '../../public/cloud.png';
+import Bridge from '../../public/automation.png';
+import Health from '../../public/software.png';
+import House from '../../public/Board.png';
+import Cup from '../../public/flash.png';
+import Tools from '../../public/refresh.png';
+import Box from '../../public/tools.png';
 
 const details = [
   {
     id: 1,
-    title: 'Manufacturing',
+    title: 'App Development',
     icon: brain.src,
   },
+
   {
     id: 2,
-    icon: pen.src,
-    title: 'Energy',
-  },
-  {
-    id: 3,
-    title: 'Food and beverage',
+    title: 'Data Analytics',
     icon: checked.src,
   },
   {
+    id: 3,
+    icon: pen.src,
+    title: 'Website Development',
+  },
+  {
     id: 4,
-    title: 'Retail',
+    title: 'Cloud Migration:',
     icon: search.src,
   },
   {
     id: 5,
-    title: 'Construction',
+    title: 'Process Automation',
     icon: Bridge.src,
   },
   {
     id: 6,
-    title: 'Healthcare',
+    title: 'Software Development',
     icon: Health.src,
   },
 ];
@@ -53,23 +54,25 @@ export default function Technoloy() {
         </div>
         <div className="w-full ">
           <h3 className="text-sm tracking-widest font-medium text-green-100 uppercase">
-            Commodity Management{' '}
+            Technology Delivery Services{' '}
           </h3>
           <h3 className="font-semibold lg:w-[518px] leading-10 text-[32px] mt-[5px] mr-[25px] text-green-100 ">
-            Optimize Your Supply Chain and Control Costs.{' '}
+            From Strategy to Implementation: Technology That Drives Business
+            Value.{' '}
           </h3>
           <p className="mt-[20px] text-green-400 text-[20px]">
-            Our commodity management experts provide businesses with the
-            strategic guidance needed to navigate volatile markets, mitigate
-            risks, and capitalize on emerging opportunities. Through meticulous
-            market analysis and negotiation, we help secure favorable terms that
-            enhance profitability and long-term stability. Additionally, we
-            ensure seamless supply continuity by implementing proactive
-            procurement strategies, fostering strong supplier relationships, and
-            adapting to ever-changing market conditions.
+            Our technology delivery team ensures the seamless implementation of
+            business-critical systems that drive efficiency, enhance
+            productivity, and generate measurable returns on investment. By
+            leveraging industry best practices, cutting-edge technologies, and
+            strategic project management, we help businesses optimise operations
+            and achieve long-term success. Our experts work closely with
+            stakeholders to tailor solutions that align with organisational
+            goals, ensuring scalability, security, and adaptability in a digital
+            landscape.
           </p>
           <p className="font-semibold text-[24px] text-green-100 mt-[20px]">
-            Industries Served{' '}
+            Our Technology Solutions{' '}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-[10px]">
             {details.map((detail) => (
@@ -99,44 +102,44 @@ export default function Technoloy() {
           <div className="bg-black-500 rounded-[20px] flex flex-col gap-5 items-center py-5">
             <Image src={House} alt="" width={60} height={60} />
             <div className="flex flex-col gap-1 items-center px-[40px]">
-              <h3 className="font-semibold text-[20px] text-green-100">
-                Strategic Sourcing{' '}
+              <h3 className="font-semibold text-center text-[20px] text-green-100">
+                Business-First Approach{' '}
               </h3>
               <p className="font-normal text-base text-black-400 text-center">
-                Identifying optimal suppliers and negotiating favorable terms.
+                Technology solutions driven by commercial objectives{' '}
               </p>
             </div>
           </div>
           <div className="bg-black-500 rounded-[20px] flex flex-col gap-5 items-center py-5">
             <Image src={Cup} alt="" width={60} height={60} />
             <div className="flex flex-col gap-1 items-center px-[40px]">
-              <h3 className="font-semibold text-[20px] text-green-100">
-                Risk Management{' '}
+              <h3 className="font-semibold  text-center text-[20px] text-green-100">
+                Agile Implementation{' '}
               </h3>
               <p className="font-normal text-base text-black-400 text-center">
-                Developing hedging strategies and contingency planning.{' '}
+                Iterative delivery with regular stakeholder feedback.{' '}
               </p>
             </div>
           </div>
           <div className="bg-black-500 rounded-[20px] flex flex-col gap-5 items-center py-5">
             <Image src={Tools} alt="" width={60} height={60} />
             <div className="flex flex-col gap-1 items-center px-[40px]">
-              <h3 className="font-semibold text-[20px] text-green-100">
-                Market Analysis{' '}
+              <h3 className="font-semibold text-center text-[20px] text-green-100">
+                Knowledge Transfer{' '}
               </h3>
               <p className="font-normal text-base text-black-400 text-center">
-                Providing timely insights on price trends and market dynamics.
+                Ensuring your team can maintain and evolve solutions.{' '}
               </p>
             </div>
           </div>
           <div className="bg-black-500 rounded-[20px] flex flex-col gap-5 items-center py-5">
             <Image src={Box} alt="" width={60} height={60} />
             <div className="flex flex-col gap-1 items-center px-[40px]">
-              <h3 className="font-semibold text-[20px] text-green-100">
-                Inventory Optimization{' '}
+              <h3 className="font-semibold  text-center text-[20px] text-green-100">
+                Ongoing Support{' '}
               </h3>
               <p className="font-normal text-base text-black-400 text-center">
-                Balancing stock levels with cash flow considerations{' '}
+                Flexible maintenance and enhancement options.{' '}
               </p>
             </div>
           </div>
