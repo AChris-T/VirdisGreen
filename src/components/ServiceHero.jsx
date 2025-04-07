@@ -132,7 +132,7 @@ export default function ServiceHero() {
     >
       <motion.h3
         variants={textVariants}
-        className="w-full md:w-[95%] lg:w-[58%] text-center text-green-100 font-semibold flex justify-center text-[35px] md:text-[44px]"
+        className="w-full md:w-[95%] lg:w-[58%] leading-12 text-center text-green-100 font-semibold flex justify-center text-[35px] md:text-[44px]"
       >
         Strategic Solutions for Lasting Business Growth
       </motion.h3>

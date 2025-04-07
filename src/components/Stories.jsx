@@ -135,7 +135,7 @@ export default function Stories() {
       animate={controls}
     >
       <motion.div
-        className="absolute right-0 top-0 opacity-50"
+        className="absolute right-0 -top-12 md:top-0 opacity-50"
         variants={quoteMarkVariants}
       >
         <ClientIcon />{' '}

@@ -54,7 +54,7 @@ export default function FAQ() {
             {/* Header */}
             <button
               onClick={() => toggleAccordion(index)}
-              className="w-full flex justify-between items-center text-start  py-4 text-[24px] font-normal text-yellow-200 focus:outline-none"
+              className="w-full flex justify-between items-center text-start  py-4 text-base md:text-[24px] font-normal text-yellow-200 focus:outline-none"
             >
               {item.title}
               {openIndex === index ? (

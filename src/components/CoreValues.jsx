@@ -38,7 +38,7 @@ export default function CoreValues() {
             {/* Header */}
             <button
               onClick={() => toggleAccordion(index)}
-              className="w-full flex justify-between items-center px-6 py-4 text-[24px] font-normal text-green-100 focus:outline-none"
+              className="w-full flex text-start justify-between items-center px-6 py-4 text-[24px] font-normal text-green-100 focus:outline-none"
             >
               {item.title}
               {openIndex === index ? <ArrowUp /> : <ArrowDown />}
