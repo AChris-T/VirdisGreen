@@ -187,16 +187,15 @@ export default function Herosection() {
             className="font-semibold text-[38px] md:text-[72px] text-center lg:text-start leading-14 md:leading-22 md:w-[755px] text-green-100"
             variants={titleVariants}
           >
-            Transforming Business Challenges Into Competitive Advantages
+            Transforming Business Challenges into Competitive Advantages{' '}
           </motion.h2>
           <motion.h2
             className="mt-5 md:w-[644px] text-black-400 text-[18px] md:text-start text-center md:text-[20px]"
             variants={itemVariants}
           >
-            At Viridis Green, we combine expertise in bid writing,
-            sustainability practices, commodity management, and technology
-            delivery to help UK businesses thrive in today's competitive
-            landscape.
+            At Viridis Green, we combine expertise in bid writing, sustainable
+            practices, commodity management, and technology delivery to help UK
+            businesses thrive in today’s competitive landscape.
           </motion.h2>
           <motion.div
             className="mt-5 flex gap-2 md:gap-[17px]"

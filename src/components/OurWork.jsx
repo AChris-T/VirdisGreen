@@ -149,9 +149,10 @@ export default function OurWork() {
           className="mt-5 w-full lg:w-[85%] text-black-400 text-[18px]"
           variants={textItemVariants}
         >
-          We simplify and optimize the bidding and consulting process, providing
+          We simplify and optimise the bidding and consulting process, providing
           businesses with the expertise, strategy, and support needed to secure
-          high-value contracts, stay compliant, and achieve sustainable growth.
+          high-value contracts, remain compliant, and achieve sustainable
+          growth.
         </motion.h2>
         <motion.button
           className="px-[32px] flex items-center gap-2 mt-10 text-[18px] font-semibold py-4 bg-green-100 cursor-pointer rounded-[12px] text-white"
@@ -222,7 +223,7 @@ export default function OurWork() {
               Commodity Management{' '}
             </h3>
             <p className="text-center mt-2 text-base text-black-400">
-              Strategic sourcing and supply chain optimization.{' '}
+              Strategic sourcing and supply chain optimisation.
             </p>
           </div>
         </motion.div>

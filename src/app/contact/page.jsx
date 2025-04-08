@@ -13,6 +13,7 @@ import FAQ from '@/components/FAQ';
 
 export default function page() {
   const [isLoading, setIsLoading] = useState(false);
+  const [firstSelect, setFirstSelect] = useState('');
 
   const formik = useFormik({
     initialValues: {
@@ -20,7 +21,7 @@ export default function page() {
       email: '',
       inquiryType: '',
       message: '',
-      //BidSector: '',
+      BidSector: '',
     },
     validationSchema: Yup.object({
       fullName: Yup.string().required('Full Name is required'),
@@ -28,7 +29,7 @@ export default function page() {
         .email('Invalid email address')
         .required('Email is required'),
       inquiryType: Yup.string().required('Please select an inquiry type'),
-     // BidSector: Yup.string().required('Please select an inquiry type'),
+      // BidSector: Yup.string().required('Please select an inquiry type'),
       message: Yup.string().required('Message cannot be empty'),
     }),
     onSubmit: (values, { resetForm }) => {
@@ -38,7 +39,7 @@ export default function page() {
         email: values.email,
         inquiry_type: values.inquiryType,
         message: values.message,
-       // BidSector: values.BidSector,
+        BidSector: values.BidSector,
       };
 
       emailjs
@@ -179,29 +180,32 @@ export default function page() {
                 </div>
 
                 {/* Inquiry Type */}
+
                 <div className="flex flex-col gap-2">
                   <label className="block font-bold text-green-100 text-sm">
                     Inquiry Type
                   </label>
-                  <select
-                    name="inquiryType"
-                    className="w-full px-4 text-green-100 py-4 border border-[#8B988B] rounded-lg focus:outline-none focus:ring focus:border-green-500"
-                    {...formik.getFieldProps('inquiryType')}
-                  >
-                    <option value="">Select Option</option>
-                    <option value="Bid-Writing Consulting">
-                      Bid-Writing Consulting
-                    </option>
-                    <option value="Sustainability Consulting">
-                      Sustainability Consulting
-                    </option>
-                    <option value="Commodity Management">
-                      Commodity Management
-                    </option>
-                    <option value="Technology Delivery">
-                      Technology Delivery
-                    </option>
-                  </select>
+                  <div className="w-full px-4 text-green-100 py-4 border border-[#8B988B] rounded-lg focus:outline-none focus:ring focus:border-green-500">
+                    <select
+                      name="inquiryType"
+                      className="w-full  text-green-100  focus:outline-none "
+                      {...formik.getFieldProps('inquiryType')}
+                    >
+                      <option value="">Select Option</option>
+                      <option value="Bid-Writing Consulting">
+                        Bid-Writing Consulting
+                      </option>
+                      <option value="Sustainability Consulting">
+                        Sustainability Consulting
+                      </option>
+                      <option value="Commodity Management">
+                        Commodity Management
+                      </option>
+                      <option value="Technology Delivery">
+                        Technology Delivery
+                      </option>
+                    </select>
+                  </div>
                   {formik.touched.inquiryType && formik.errors.inquiryType ? (
                     <p className="text-red-500 text-sm">
                       {formik.errors.inquiryType}
@@ -210,33 +214,45 @@ export default function page() {
                 </div>
 
                 {/**Bid selector */}
-
-                {/* <div className="flex flex-col gap-2">
-                  <label className="block font-bold text-green-100 text-sm">
-                    Bid-Writing Sector{' '}
-                  </label>
-                  <select
-                    name="BidSector"
-                    className="w-full px-4 text-green-100 py-4 border border-[#8B988B] rounded-lg focus:outline-none focus:ring focus:border-green-500"
-                    {...formik.getFieldProps('BidSector')}
-                  >
-                    <option value="">Select Option</option>
-                    <option value="Bid-Writing Consulting">
-                      Bid-Writing Consulting{' '}
-                    </option>
-                    <option value="Sustainability Consulting">
-                      Sustainability Consulting
-                    </option>
-                    <option value="Commodity Management">
-                      Commodity Management
-                    </option>
-                  </select>
-                  {formik.touched.BidSector && formik.errors.BidSector ? (
-                    <p className="text-red-500 text-sm">
-                      {formik.errors.BidSector}
-                    </p>
-                  ) : null}
-                </div> */}
+                {formik.values.inquiryType === 'Bid-Writing Consulting' && (
+                  <div className="flex flex-col gap-2">
+                    <label className="block font-bold text-green-100 text-sm">
+                      Bid-Writing Sector{' '}
+                    </label>
+                    <div className="w-full px-4 text-green-100 py-4 border border-[#8B988B] rounded-lg focus:outline-none focus:ring focus:border-green-500">
+                      <select
+                        name="BidSector"
+                        className="w-full  text-green-100  focus:outline-none "
+                        {...formik.getFieldProps('BidSector')}
+                      >
+                        <option value="">Select Option</option>
+                        <option value="Construction">Construction</option>
+                        <option value="Facilities Management ">
+                          Facilities Management
+                        </option>
+                        <option value="Healthcare and Social Care">
+                          Healthcare and Social Care
+                        </option>
+                        <option value="Education & youth services">
+                          Education & youth services
+                        </option>
+                        <option value="Education & youth services">
+                          Education & youth services
+                        </option>
+                        <option value="Commercial and Domestic Cleaning services">
+                          Commercial and Domestic Cleaning services
+                        </option>
+                        <option value="Charity">Charity</option>
+                        <option value="others">others </option>
+                      </select>
+                    </div>
+                    {formik.touched.BidSector && formik.errors.BidSector ? (
+                      <p className="text-red-500 text-sm">
+                        {formik.errors.BidSector}
+                      </p>
+                    ) : null}
+                  </div>
+                )}
 
                 {/* Message */}
                 <div className="flex flex-col gap-2">

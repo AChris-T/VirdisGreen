@@ -26,8 +26,8 @@ export default function Footer() {
           Let’s Work Together to Secure Your Next Big Opportunity
         </h3>
         <p className="text-green-300 z-10 text-lg font-medium text-center">
-          We’re ready to help you win more contracts and optimize your business
-          strategy.
+          We’re ready to help you secure more contracts and optimise your
+          business strategy.
         </p>
         <button className="z-10 px-[30px] py-[15px] text-white bg-green-100 rounded-[10px] font-semibold text-[18px] gap-2 flex items-center">
           Get Started
@@ -47,17 +47,18 @@ export default function Footer() {
           <Link href="/" className="text-black-300 text-base ">
             Home
           </Link>
-          <Link href="/" className="text-black-300 text-base ">
-            Our Service
-          </Link>
-          <Link href="/" className="text-black-300 text-base ">
-            Testimonials
-          </Link>
-          <Link href="/" className="text-black-300 text-base ">
+          <Link href="/about" className="text-black-300 text-base ">
             About Us
           </Link>
-          <Link href="/" className="text-black-300 text-base ">
-            Cantact
+          <Link href="/service" className="text-black-300 text-base ">
+            Our Service
+          </Link>
+          <Link href="/#testimonials" className="text-black-300 text-base ">
+            Testimonials
+          </Link>
+
+          <Link href="/contact" className="text-black-300 text-base ">
+            Contact
           </Link>
         </div>
         <div className="mt-[48px] flex gap-6 items-center">

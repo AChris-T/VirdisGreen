@@ -7,6 +7,7 @@ import ArrowGreen from '../../public/icons/ArrowGreen';
 const details = [
   {
     id: 1,
+    num: 2,
     title: 'Bid Writing Consulting',
     details: 'Win More Contracts with Expert Bid Writing Services.',
     content:
@@ -14,6 +15,7 @@ const details = [
   },
   {
     id: 2,
+    num: 3,
     title: 'Sustainability Consulting',
     details:
       'Future-Proof Your Business with Strategic Sustainability Solutions.',
@@ -22,13 +24,15 @@ const details = [
   },
   {
     id: 3,
+    num: 4,
     title: 'Commodity Management',
-    details: 'Optimize Your Supply Chain and Control Costs.',
+    details: 'Optimise Your Supply Chain and Control Costs.',
     content:
-      'Our commodity management experts help businesses navigate volatile markets, secure favorable terms, and maintain supply continuity.3',
+      'Our commodity management experts help businesses navigate volatile markets, secure favourable terms, and maintain supply continuity.',
   },
   {
     id: 4,
+    num: 5,
     title: 'Technology Delivery Services',
     details:
       'From Strategy to Implementation: Technology That Drives Business Value.',
@@ -37,7 +41,7 @@ const details = [
   },
 ];
 
-export default function AllService() {
+export default function AllService({ setActiveTab }) {
   const containerRef = useRef(null);
   const isInView = useInView(containerRef, { once: true, amount: 0.1 });
 
@@ -131,7 +135,8 @@ export default function AllService() {
           </div>
           <motion.div variants={linkVariants} whileHover="hover">
             <Link
-              href={''}
+              href=""
+              onClick={() => setActiveTab(detail.num)}
               className="font-semibold text-[18px] text-green-100 flex gap-2 items-center"
             >
               Learn more <ArrowGreen />

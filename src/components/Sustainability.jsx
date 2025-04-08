@@ -95,7 +95,7 @@ export default function Sustainability() {
                 Sector-Specific Expertise
               </h3>
               <p className="font-normal text-base text-black-400 text-center">
-                Writers specializing in public sector, construction, healthcare,
+                Writers specialising in public sector, construction, healthcare,
                 IT, and more
               </p>
             </div>

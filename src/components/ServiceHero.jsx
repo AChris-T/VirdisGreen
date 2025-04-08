@@ -12,38 +12,42 @@ import Sustainability from './Sustainability';
 import Commodity from './Commodity';
 import Technoloy from './Technoloy';
 
-const tabs = [
-  { id: 1, title: 'All', icon: <Star />, content: <AllService /> },
-  {
-    id: 2,
-    icon: <Bag />,
-    title: 'Bid-Writing Consulting',
-    content: <BidWriting />,
-  },
-  {
-    id: 3,
-    title: 'Sustainability Consulting',
-    icon: <Chart />,
-    content: <Sustainability />,
-  },
-  {
-    id: 4,
-    title: 'Commodity Management',
-    icon: <LineChart />,
-    content: <Commodity />,
-  },
-  {
-    id: 5,
-    title: 'Technology Delivery',
-    icon: <Rockect />,
-    content: <Technoloy />,
-  },
-];
-
 export default function ServiceHero() {
   const [activeTab, setActiveTab] = useState(1);
   const containerRef = useRef(null);
   const isInView = useInView(containerRef, { once: true, amount: 0.2 });
+  const tabs = [
+    {
+      id: 1,
+      title: 'All',
+      icon: <Star />,
+      content: (props) => <AllService {...props} />,
+    },
+    {
+      id: 2,
+      icon: <Bag />,
+      title: 'Bid Writing Consulting',
+      content: () => <BidWriting />,
+    },
+    {
+      id: 3,
+      title: 'Sustainability Consulting',
+      icon: <Chart />,
+      content: () => <Sustainability />,
+    },
+    {
+      id: 4,
+      title: 'Commodity Management',
+      icon: <LineChart />,
+      content: () => <Commodity />,
+    },
+    {
+      id: 5,
+      title: 'Technology Delivery',
+      icon: <Rockect />,
+      content: () => <Technoloy />,
+    },
+  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -142,7 +146,7 @@ export default function ServiceHero() {
       >
         We provide expert consulting in bid writing, sustainability, commodity
         management, and technology delivery—helping businesses secure contracts,
-        optimize operations, and drive long-term success.
+        optimise operations, and drive long-term success.
       </motion.p>
       <div className="w-full md:px-[38px]">
         <div>
@@ -183,7 +187,9 @@ export default function ServiceHero() {
               variants={contentVariants}
               className="mt-[53px] px-2"
             >
-              {tabs.find((tab) => tab.id === activeTab)?.content}
+              {tabs
+                .find((tab) => tab.id === activeTab)
+                ?.content({ setActiveTab })}
             </motion.div>
           </AnimatePresence>
         </div>

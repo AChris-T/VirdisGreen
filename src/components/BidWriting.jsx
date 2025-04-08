@@ -20,22 +20,22 @@ const details = [
   {
     id: 2,
     icon: pen.src,
-    title: 'Proposal Development: ',
+    title: 'Proposal Development',
     content:
-      ' Our writers craft persuasive narratives that highlight your unique value proposition.',
+      'Our writers craft persuasive narratives that highlight your unique value proposition.',
   },
   {
     id: 3,
-    title: 'Compliance Management:',
+    title: 'Compliance Management',
     icon: checked.src,
     content:
       'We ensure every submission meets all tender requirements with precision.',
   },
   {
     id: 4,
-    title: 'Review & Optimization:',
+    title: 'Review & Optimisation',
     icon: search.src,
-    content: 'Rigorous quality assurance to maximize your success rate.',
+    content: 'Rigorous quality assurance to maximise your success rate.',
   },
 ];
 
@@ -48,10 +48,10 @@ export default function BidWriting() {
         </div>
         <div className="w-full ">
           <h3 className="text-sm tracking-widest font-medium text-green-100 uppercase">
-            Bid-Writing Consulting{' '}
+            Bid-Writing Consulting
           </h3>
-          <h3 className="font-semibold lg:w-[518px] leading-10 text-[32px] mt-[5px] mr-[25px] text-green-100 ">
-            Win More Contracts with Expert Bid-Writing Services.{' '}
+          <h3 className="font-semibold lg:w-[518px] leading-10 text-[32px] mt-[5px] mr-[25px] text-green-100">
+            Win More Contracts with Expert Bid-Writing Services.
           </h3>
           <p className="mt-[20px] text-green-400 text-[20px]">
             Our team of bid writing specialists assists businesses across the UK
@@ -60,7 +60,7 @@ export default function BidWriting() {
             compliant with client requirements, and competitive in the
             marketplace. With our expertise, businesses confidently navigate the
             bid process, increasing their chances of winning contracts and
-            gaining an edge over competitors.{' '}
+            gaining an edge over competitors.
           </p>
           <p className="font-semibold text-[24px] text-green-100 mt-[20px]">
             Our Approach
@@ -98,7 +98,7 @@ export default function BidWriting() {
                 Sector-Specific Expertise
               </h3>
               <p className="font-normal text-base text-black-400 text-center">
-                Writers specializing in public sector, construction, healthcare,
+                Writers specialising in public sector, construction, healthcare,
                 IT, and more
               </p>
             </div>
@@ -107,7 +107,7 @@ export default function BidWriting() {
             <Image src={Cup} alt="" width={60} height={60} />
             <div className="flex flex-col gap-1 items-center px-[40px]">
               <h3 className="font-semibold text-[20px] text-green-100">
-                Proven Track Record{' '}
+                Proven Track Record
               </h3>
               <p className="font-normal text-base text-black-400 text-center">
                 85% success rate across all sectors, demonstrating consistency.
@@ -118,11 +118,11 @@ export default function BidWriting() {
             <Image src={Tools} alt="" width={60} height={60} />
             <div className="flex flex-col gap-1 items-center px-[40px]">
               <h3 className="font-semibold text-[20px] text-green-100">
-                Full-Service Support{' '}
+                Full-Service Support
               </h3>
               <p className="font-normal text-base text-black-400 text-center">
                 From opportunity identification to post-submission
-                clarifications.{' '}
+                clarifications.
               </p>
             </div>
           </div>

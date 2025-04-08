@@ -6,12 +6,13 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import Menubar from '../../public/icons/Menubar';
+import { useRouter } from 'next/navigation';
 
 const NAV_LINKS = [
   { name: 'Home', href: '/' },
-  /*   { name: 'Testimonials', href: '/testimonials' },
-   */ { name: 'About Us', href: '/about' },
+  { name: 'About Us', href: '/about' },
   { name: 'Our Services', href: '/service' },
+  { name: 'Testimonials', href: '#testimonials' },
   { name: 'Contact', href: '/contact' },
 ];
 
@@ -273,11 +274,26 @@ export default function Navbar() {
 
 const NavLink = ({ href, pathname, children, scrolled }) => {
   const isActive = pathname === href;
+  const router = useRouter();
+
+  const handleClick = (e) => {
+    if (href === '#testimonials') {
+      e.preventDefault();
+
+      if (pathname === '/') {
+        const el = document.getElementById('testimonials');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        router.push('/#testimonials');
+      }
+    }
+  };
 
   return (
     <div className="flex">
       <Link
-        href={href}
+        href={href === '/testimonials' ? '/' : href}
+        onClick={handleClick}
         className={`relative text-base transition-all duration-300 text-green-100 ${
           scrolled ? 'text-[15px]' : 'text-base'
         } ${

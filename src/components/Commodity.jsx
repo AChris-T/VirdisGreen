@@ -56,12 +56,12 @@ export default function Commodity() {
             Commodity Management{' '}
           </h3>
           <h3 className="font-semibold lg:w-[518px] leading-10 text-[32px] mt-[5px] mr-[25px] text-green-100 ">
-            Optimize Your Supply Chain and Control Costs.{' '}
+            Optimise Your Supply Chain and Control Costs.{' '}
           </h3>
           <p className="mt-[20px] text-green-400 text-[20px]">
             Our commodity management experts provide businesses with the
             strategic guidance needed to navigate volatile markets, mitigate
-            risks, and capitalize on emerging opportunities. Through meticulous
+            risks, and capitalise on emerging opportunities. Through meticulous
             market analysis and negotiation, we help secure favorable terms that
             enhance profitability and long-term stability. Additionally, we
             ensure seamless supply continuity by implementing proactive
@@ -103,7 +103,7 @@ export default function Commodity() {
                 Strategic Sourcing{' '}
               </h3>
               <p className="font-normal text-base text-black-400 text-center">
-                Identifying optimal suppliers and negotiating favorable terms.
+                Identifying optimal suppliers and negotiating favourable terms.
               </p>
             </div>
           </div>
@@ -133,7 +133,7 @@ export default function Commodity() {
             <Image src={Box} alt="" width={60} height={60} />
             <div className="flex flex-col gap-1 items-center px-[40px]">
               <h3 className="font-semibold text-[20px] text-green-100">
-                Inventory Optimization{' '}
+                Inventory Optimisation{' '}
               </h3>
               <p className="font-normal text-base text-black-400 text-center">
                 Balancing stock levels with cash flow considerations{' '}

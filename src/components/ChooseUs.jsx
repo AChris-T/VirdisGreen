@@ -143,7 +143,7 @@ export default function ChooseUs() {
     {
       icon: Cup.src,
       title: 'Proven Expertise',
-      description: '85% bid success—helping businesses win more contracts.',
+      description: '85% bid success – helping businesses win more contracts.',
     },
     {
       icon: Glob.src,
@@ -158,7 +158,7 @@ export default function ChooseUs() {
     {
       icon: chain.src,
       title: 'Integrated Solutions',
-      description: 'Integrated approach to complex business challenges.',
+      description: 'An integrated approach to complex business challenges.',
     },
     {
       icon: chart.src,
@@ -187,7 +187,7 @@ export default function ChooseUs() {
           variants={titleVariants}
         >
           With a proven track record in bids, sustainability, and business
-          growth, we deliver tailored solutions to help companies secure
+          growth, we deliver tailored solutions to help businesses secure
           contracts and scale.
         </motion.p>
       </motion.div>

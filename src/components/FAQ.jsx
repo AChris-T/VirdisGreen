@@ -15,28 +15,33 @@ export default function FAQ() {
     {
       title: 'How can Viridis Green help my business secure contracts?',
       content:
-        'We are committed to helping businesses secure contracts through strategic bid writing, procurement expertise, and compliance support. Our tailored approach maximizes success rates, ensuring clients stay competitive in their industries.',
+        'We are committed to helping businesses secure contracts through strategic bid writing, procurement expertise, and compliance support. Our tailored approach maximises success rates, ensuring clients stay competitive in their industries.',
     },
     {
       title:
-        'What industries do you specialize in for bid writing and procurement?s',
-      content: '',
+        'What industries do you specialise in for bid writing and procurement?',
+      content:
+        'We specialise in a wide range of industries, including construction, healthcare, IT, public sector, and more. Our team has extensive experience tailoring bid writing and procurement strategies to meet the unique needs of each sector.',
     },
     {
       title: 'What makes your sustainability consulting different?',
-      content: '',
+      content:
+        'Our sustainability consulting is distinguished by a holistic, tailored approach that aligns with your business objectives. We focus on practical, actionable solutions to ensure compliance with environmental regulations while enhancing long-term business success.',
     },
     {
       title: 'How do you ensure compliance with contract requirements?',
-      content: '',
+      content:
+        'We ensure compliance by meticulously reviewing all contract requirements, supporting businesses in understanding their obligations, and guiding them through the necessary documentation and processes. Our expert team also offers training and support to ensure ongoing compliance.',
     },
     {
       title: 'Do you offer ongoing support after bid submission?',
-      content: '',
+      content:
+        'Yes, we offer continuous support after bid submission to address any clarifications, questions, or adjustments that may arise. Our team stays engaged throughout the evaluation process, ensuring your business remains informed and prepared.',
     },
     {
       title: 'How can I get started with your services?',
-      content: '',
+      content:
+        'Getting started with our services is simple. Just reach out to us through our contact page, and one of our consultants will schedule an initial consultation to discuss your business needs and how we can assist you with bid writing, procurement, or sustainability consulting.',
     },
   ];
   return (
@@ -68,7 +73,7 @@ export default function FAQ() {
             <div>
               {openIndex === index && item.content && (
                 <div className=" flex gap-2  w-full items-center ">
-                  <div className="mb-4 border-green-100 text-black-400">
+                  <div className="mb-4 border-green-100 md:w-[70%] w-[70%] text-black-400">
                     {item.content}
                   </div>
                 </div>

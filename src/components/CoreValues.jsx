@@ -41,7 +41,13 @@ export default function CoreValues() {
               className="w-full flex text-start justify-between items-center px-6 py-4 text-[24px] font-normal text-green-100 focus:outline-none"
             >
               {item.title}
-              {openIndex === index ? <ArrowUp /> : <ArrowDown />}
+              <div
+                className={`transform transition-transform duration-300 ${
+                  openIndex === index ? 'rotate-180 ' : 'rotate-0'
+                }`}
+              >
+                <ArrowDown />
+              </div>{' '}
             </button>
 
             {/* Content */}
