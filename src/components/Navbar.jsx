@@ -200,7 +200,7 @@ export default function Navbar() {
               exit="closed"
               variants={mobileMenuVariants}
             >
-              <div className="flex flex-col h-full p-6">
+              <div className="flex w-full flex-col h-full p-6">
                 <div className="flex justify-between items-center mb-8">
                   <Image
                     src={group}
@@ -230,19 +230,20 @@ export default function Navbar() {
                     </svg>
                   </motion.button>
                 </div>
-                <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-6 w-full">
                   {NAV_LINKS.map(({ name, href }, index) => (
                     <motion.div
                       key={href}
                       initial={{ opacity: 0, x: 20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: index * 0.1 }}
+                      className="w-full"
                     >
                       <Link
                         href={href}
-                        className={`text-[18px] font-medium text-green-100 ${
+                        className={`text-[18px] w-full  font-medium text-green-100 ${
                           pathname === href
-                            ? 'text-green-100 font-semibold'
+                            ? 'text-green-100 font-semibold w-full'
                             : ''
                         }`}
                         onClick={handleMobileMenuToggle}

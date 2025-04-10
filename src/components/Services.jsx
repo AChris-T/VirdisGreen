@@ -40,7 +40,7 @@ export default function Services() {
   };
 
   return (
-    <div className="w-full flex flex-col gap-5 md:px-5 lg:px-56 mb-[180px]">
+    <div className="w-full flex flex-col gap-5 md:px-5 lg:px-56 mb-[40px] md:mb-[180px]">
       <motion.div
         ref={containerRef}
         initial="hidden"
