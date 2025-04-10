@@ -23,11 +23,13 @@ body {
   height: 638px;
 }
 
-:root {
-  --sonner-success-bg: #4caf50; /* Customize success background color */
-  --sonner-success-color: white; /* Customize text color for success */
-  --sonner-error-bg: #f44336; /* Customize error background color */
-  --sonner-error-color: white; /* Customize text color for error */
+.react-day-picker .rdp-nav-button svg {
+  fill: #38a169 !important; /* Tailwind's green-600 */
+}
+
+/* Optional: Darker green color when hovering over the button */
+.react-day-picker .rdp-nav-button:hover svg {
+  fill: #2f855a !important; /* Tailwind's green-800 */
 }
 /*
 

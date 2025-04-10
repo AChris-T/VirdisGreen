@@ -53,22 +53,28 @@ export default function page() {
           (result) => {
             console.log('Email successfully sent!', result.text);
             toast.success('Message sent successfully!', {
-              position: 'top-right', // Can be 'top-right', 'top-left', 'bottom-right', or 'bottom-left'
+              position: 'top-right', 
               duration: 4000,
               style: {
-                backgroundColor: '#4CAF50', // Custom green for success
+                backgroundColor: '#4CAF50',
                 color: 'white',
-              }, // Customize the duration (in milliseconds)
+              }, 
             });
             resetForm();
           },
           (error) => {
-            toast.error('Email sending failed');
-            alert('Failed to send message. Try again later.');
+            toast.error('Email sending failed', {
+              position: 'top-right', 
+              duration: 4000,
+              style: {
+                backgroundColor: 'red', 
+                color: 'white',
+              }, 
+            });
           }
         )
         .finally(() => {
-          setIsLoading(false); // End loading
+          setIsLoading(false); 
         });
     },
   });

@@ -171,7 +171,7 @@ export default function Navbar() {
             }}
             whileTap={{ scale: 0.98 }}
           >
-            Book a Consultation
+            <Link href="/book-consultation">Book a Consultation </Link>
           </motion.button>
           <motion.button
             className={`lg:hidden flex transition-all duration-300 ${
@@ -260,7 +260,7 @@ export default function Navbar() {
                     whileTap={{ scale: 0.98 }}
                     onClick={handleMobileMenuToggle}
                   >
-                    Book a Consultation
+                    <Link href="/book-consultation">Book a Consultation </Link>
                   </motion.button>
                 </div>
               </div>

@@ -104,7 +104,12 @@ export default function AboutHero() {
       </div>
 
       <motion.div variants={imageVariants} className="w-full md:-mt-8 -mt-20">
-        <Image src={frame} alt="" className="w-full object-cover" priority />
+        <Image
+          src={frame}
+          alt=""
+          className="w-full h-[300px] md:h-full object-cover"
+          priority
+        />
       </motion.div>
       <div className="mt-[111px] flex flex-col justify-center items-center">
         <h3 className="text-[64px] text-green-100 lg:w-[800px] text-center w-full leading-16">
