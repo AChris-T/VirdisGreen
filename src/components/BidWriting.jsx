@@ -50,7 +50,7 @@ export default function BidWriting() {
           <h3 className="text-sm tracking-widest font-medium text-green-100 uppercase">
             Bid-Writing Consulting
           </h3>
-          <h3 className="font-semibold lg:w-[518px] leading-10 text-[32px] mt-[5px] mr-[25px] text-green-100">
+          <h3 className="font-semibold lg:w-[518px] leading-10 text-[26px] md:text-[32px] mt-[5px] mr-[25px] text-green-100">
             Win More Contracts with Expert Bid-Writing Services.
           </h3>
           <p className="mt-[20px] text-green-400 text-[20px]">
@@ -62,7 +62,7 @@ export default function BidWriting() {
             bid process, increasing their chances of winning contracts and
             gaining an edge over competitors.
           </p>
-          <p className="font-semibold text-[24px] text-green-100 mt-[20px]">
+          <p className="font-semibold text-[20px] md:text-[24px] text-green-100 mt-[20px]">
             Our Approach
           </p>
           <div className="flex flex-col gap-5 mt-[10px]">
@@ -75,7 +75,7 @@ export default function BidWriting() {
                   alt=""
                   className="w-[50px] h-[50px]"
                 />
-                <h3 className="text-[20px] font-medium">
+                <h3 className="text-[18px] md:text-[20px] font-medium">
                   <span className="text-green-100 font-semibold">
                     {detail.title}
                   </span>{' '}
@@ -87,7 +87,7 @@ export default function BidWriting() {
         </div>
       </div>
       <div className="w-full flex flex-col items-center justify-center">
-        <h3 className="font-semibold text-[32px] text-green-100">
+        <h3 className="font-semibold text-[26px] md:text-[32px] text-green-100">
           Why Our Bid-Writing Works.
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full mt-[30px]">

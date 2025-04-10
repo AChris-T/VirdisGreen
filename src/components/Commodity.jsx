@@ -55,7 +55,7 @@ export default function Commodity() {
           <h3 className="text-sm tracking-widest font-medium text-green-100 uppercase">
             Commodity Management{' '}
           </h3>
-          <h3 className="font-semibold lg:w-[518px] leading-10 text-[32px] mt-[5px] mr-[25px] text-green-100 ">
+          <h3 className="font-semibold lg:w-[518px] leading-10 text-[26px] md:text-[32px] mt-[5px] mr-[25px] text-green-100 ">
             Optimise Your Supply Chain and Control Costs.{' '}
           </h3>
           <p className="mt-[20px] text-green-400 text-[20px]">
@@ -68,7 +68,7 @@ export default function Commodity() {
             procurement strategies, fostering strong supplier relationships, and
             adapting to ever-changing market conditions.
           </p>
-          <p className="font-semibold text-[24px] text-green-100 mt-[20px]">
+          <p className="font-semibold text-[20px] md:text-[24px] text-green-100 mt-[20px]">
             Industries Served{' '}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-[10px]">
@@ -81,7 +81,7 @@ export default function Commodity() {
                   alt=""
                   className="w-[50px] h-[50px]"
                 />
-                <h3 className="text-[20px] font-medium">
+                <h3 className="text-[18px] md:text-[20px] font-medium">
                   <span className="text-green-100 font-semibold">
                     {detail.title}
                   </span>{' '}
@@ -92,7 +92,7 @@ export default function Commodity() {
         </div>
       </div>
       <div className="w-full flex flex-col items-center justify-center">
-        <h3 className="font-semibold text-[32px] text-green-100">
+        <h3 className="font-semibold text-[26px] md:text-[32px] text-green-100">
           Our Core Services{' '}
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 w-full mt-[30px]">

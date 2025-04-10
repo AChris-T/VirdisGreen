@@ -74,7 +74,7 @@ export default function AboutHero() {
         >
           <motion.h3
             variants={textVariants}
-            className=" px-3 lg:pr-18 w-full lg:w-[800px] text-center leading-12 md:leading-18 lg:text-start text-green-100 font-semibold flex justify-center md:text-[64px] text-[44px]"
+            className=" px-3 lg:pr-18 w-full lg:w-[800px] text-center leading-12 md:leading-18 lg:text-start text-green-100 font-semibold flex justify-center md:text-[64px] text-[30px]"
           >
             Your Trusted Partner in Bidding, Sustainability, & Business Growth
           </motion.h3>
@@ -112,11 +112,10 @@ export default function AboutHero() {
         />
       </motion.div>
       <div className="mt-[111px] flex flex-col justify-center items-center">
-        <h3 className="text-[64px] text-green-100 lg:w-[800px] text-center w-full leading-16">
+        <h3 className="text-[30px] leading-12 md:text-[64px] text-green-100 lg:w-[800px] text-center w-full md:leading-16">
           Viridis Green is not just{' '}
-          <p className="relative  text-yellow-100 inline-block">
+          <p className="relative line-through  text-yellow-100 inline-block">
             another
-            <span className="absolute left-0 top-8 bottom-0 w-full h-[2px] bg-yellow-100"></span>
           </p>{' '}
           business consulting firm.
         </h3>

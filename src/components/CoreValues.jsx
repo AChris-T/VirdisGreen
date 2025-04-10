@@ -21,7 +21,9 @@ export default function CoreValues() {
   ];
   return (
     <div className="flex flex-col items-center">
-      <h3 className="text-[42px] font-bold text-green-100">Our Core Values</h3>
+      <h3 className="text-[30px] md:text-[42px] font-bold text-green-100">
+        Our Core Values
+      </h3>
       <h3 className="text-[18px] text-green-400 w-full md:w-[644px] text-center mt-[10px]">
         With a proven track record in bids, sustainability, and business growth,
         we deliver tailored solutions to help companies secure contracts and

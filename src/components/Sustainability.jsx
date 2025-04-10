@@ -47,7 +47,7 @@ export default function Sustainability() {
           <h3 className="text-sm tracking-widest font-medium text-green-100 uppercase">
             Sustainability Consulting{' '}
           </h3>
-          <h3 className="font-semibold lg:w-[518px] leading-10 text-[32px] mt-[5px] mr-[25px] text-green-100 ">
+          <h3 className="font-semibold lg:w-[518px] leading-10 text-[26px] md:text-[32px] mt-[5px] mr-[25px] text-green-100 ">
             Future-Proof Your Business with Strategic Sustainability Solutions.{' '}
           </h3>
           <p className="mt-[20px] text-green-400 text-[20px]">
@@ -59,7 +59,7 @@ export default function Sustainability() {
             adopt sustainable practices, increasing their resilience,
             reputation, and long-term success in a rapidly evolving marketplace.
           </p>
-          <p className="font-semibold text-[24px] text-green-100 mt-[20px]">
+          <p className="font-semibold text-[20px] md:text-[24px] text-green-100 mt-[20px]">
             Our Services Include{' '}
           </p>
           <div className="flex flex-col gap-5 mt-[10px]">
@@ -72,7 +72,7 @@ export default function Sustainability() {
                   alt=""
                   className="w-[50px] h-[50px]"
                 />
-                <h3 className="text-[20px] font-medium">
+                <h3 className="text-[18px] md:text-[20px] font-medium">
                   <span className="text-green-100 font-semibold">
                     {detail.title}
                   </span>{' '}
@@ -84,7 +84,7 @@ export default function Sustainability() {
         </div>
       </div>
       <div className="w-full flex flex-col items-center justify-center">
-        <h3 className="font-semibold text-[32px] text-green-100">
+        <h3 className="font-semibold text-[26px] text-center md:text-[32px] text-green-100">
           The Strategic Solutions Difference{' '}
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full mt-[30px]">

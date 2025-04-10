@@ -22,10 +22,10 @@ export default function Footer() {
           priority
           className="object-cover z-10"
         />
-        <h3 className="font-semibold z-10 text-green-100 lg:leading-20 leading-12 text-[38px] lg:text-[68px] text-center">
+        <h3 className="font-semibold z-10 text-green-100 lg:leading-20 leading-12 text-[30px] lg:text-[68px] text-center">
           Let’s Work Together to Secure Your Next Big Opportunity
         </h3>
-        <p className="text-green-300 z-10 text-lg font-medium text-center">
+        <p className="text-green-300 px-2 z-10 text-lg font-medium text-center">
           We’re ready to help you secure more contracts and optimise your
           business strategy.
         </p>

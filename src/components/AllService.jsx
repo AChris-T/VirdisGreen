@@ -122,7 +122,7 @@ export default function AllService({ setActiveTab }) {
             </motion.h3>
             <motion.h3
               variants={textVariants}
-              className="font-semibold leading-10 text-[32px] mt-[5px] mr-[25px] text-green-100"
+              className="font-semibold leading-9 md:leading-10 text-[26px] md:text-[32px] mt-[5px] md:mr-[25px] text-green-100"
             >
               {detail.details}
             </motion.h3>

@@ -46,9 +46,9 @@ export default function FAQ() {
   ];
   return (
     <div className="bg-green-100 text-white px-3 md:px-[43px] py-[100px]">
-      <h3 className="md:text-[58px] text-[38px]">Got a question?</h3>
-      <h3 className="md:text-[58px] text-[38px]">FAQ</h3>
-      <div className="w-full mt-10 ">
+      <h3 className="md:text-[58px] text-[30px]">Got a question?</h3>
+      <h3 className="md:text-[58px] text-[30px]">FAQ</h3>
+      <div className="w-full mt-3 md:mt-10 ">
         {items.map((item, index) => (
           <div
             key={index}

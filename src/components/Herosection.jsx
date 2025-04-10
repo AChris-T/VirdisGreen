@@ -184,7 +184,7 @@ export default function Herosection() {
             Viridis Green
           </motion.h3>
           <motion.h2
-            className="font-semibold text-[38px] md:text-[72px] text-center lg:text-start leading-14 md:leading-22 md:w-[755px] text-green-100"
+            className="font-semibold text-[30px] md:text-[72px] text-center lg:text-start leading-12 md:leading-22 md:w-[755px] text-green-100"
             variants={titleVariants}
           >
             Transforming Business Challenges into Competitive Advantages{' '}

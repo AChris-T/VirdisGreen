@@ -159,7 +159,7 @@ export default function Stories() {
         {/* Heading */}
         <div className="mb-10 flex flex-col items-center w-full relative z-10">
           <motion.h2
-            className="text-4xl text-center font-bold text-green-100 mb-4"
+            className="text-[30px] md:text-4xl  text-center font-bold text-green-100 mb-4"
             variants={titleVariants}
           >
             Our Clients' Success Stories
