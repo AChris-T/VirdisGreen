@@ -15,10 +15,15 @@ export default function FormStep1() {
             className="w-full text-green-100 h-full focus:outline-none "
             placeholder="Enter your name"
           >
-            <option value="">Select a service</option>
-            <option value="cleaning">Cleaning</option>
-            <option value="delivery">Delivery</option>
-            <option value="maintenance">Maintenance</option>
+            <option value="">Select Option</option>
+            <option value="Bid-Writing Consulting">
+              Bid-Writing Consulting
+            </option>
+            <option value="Sustainability Consulting">
+              Sustainability Consulting
+            </option>
+            <option value="Commodity Management">Commodity Management</option>
+            <option value="Technology Delivery">Technology Delivery</option>
           </Field>
         </div>
         <ErrorMessage
