@@ -29,10 +29,13 @@ export default function Footer() {
           We’re ready to help you secure more contracts and optimise your
           business strategy.
         </p>
-        <button className="z-10 px-[30px] py-[15px] text-white bg-green-100 rounded-[10px] font-semibold text-[18px] gap-2 flex items-center">
+        <Link
+          href="/book-consultation"
+          className="z-10 px-[30px] py-[15px] text-white bg-green-100 rounded-[10px] font-semibold text-[18px] gap-2 flex items-center"
+        >
           Get Started
           <Arrow />
-        </button>
+        </Link>
       </div>
       <div className="bg-yellow-200 py-10 md:h-[285px] flex-col flex justify-center items-center">
         <Image

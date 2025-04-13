@@ -6,6 +6,7 @@ import BarIcon from '../../public/icons/BarIcon';
 import ProgressIcon from '../../public/icons/ProgressIcon';
 import Rocket from '../../public/icons/Rocket';
 import ArrowWhite from '../../public/icons/ArrowWhite';
+import Link from 'next/link';
 
 export default function OurWork() {
   // Create refs for scroll detection
@@ -163,8 +164,13 @@ export default function OurWork() {
           }}
           whileTap={{ scale: 0.98 }}
         >
-          Get Started
-          <ArrowWhite />
+          <Link
+            href="/book-consultation"
+            className="w-full h-full flex items-center"
+          >
+            Get Started
+            <ArrowWhite />
+          </Link>
         </motion.button>
       </motion.div>
       <motion.div

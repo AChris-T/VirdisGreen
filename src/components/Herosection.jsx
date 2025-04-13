@@ -201,15 +201,17 @@ export default function Herosection() {
             className="mt-5 flex gap-2 md:gap-[17px]"
             variants={buttonsContainerVariants}
           >
-            <motion.button
+            <motion.div
               className="px-4 md:px-[32px] text-[14px] md:text-[18px] font-semibold py-4 bg-green-100 cursor-pointer rounded-[12px] text-white"
               custom={0}
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
             >
-              Book a Consultation
-            </motion.button>
+              <Link href="/book-consultation" className="w-full h-full">
+                Book a Consultation
+              </Link>
+            </motion.div>
             <motion.button
               className="px-4 md:px-[32px] text-[14px] md:text-[18px] font-semibold py-4 text-green-100 cursor-pointer rounded-[12px] border-[2px] border-green-100"
               custom={1}
