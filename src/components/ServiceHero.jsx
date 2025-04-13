@@ -23,6 +23,7 @@ export default function ServiceHero() {
       icon: <Star />,
       content: (props) => <AllService {...props} />,
     },
+
     {
       id: 2,
       icon: <Bag />,
@@ -31,21 +32,21 @@ export default function ServiceHero() {
     },
     {
       id: 3,
+      title: 'Technology Delivery',
+      icon: <Rockect />,
+      content: () => <Technoloy />,
+    },
+    {
+      id: 4,
       title: 'Sustainability Consulting',
       icon: <Chart />,
       content: () => <Sustainability />,
     },
     {
-      id: 4,
+      id: 5,
       title: 'Commodity Management',
       icon: <LineChart />,
       content: () => <Commodity />,
-    },
-    {
-      id: 5,
-      title: 'Technology Delivery',
-      icon: <Rockect />,
-      content: () => <Technoloy />,
     },
   ];
 
