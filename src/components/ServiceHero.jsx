@@ -158,7 +158,7 @@ export default function ServiceHero() {
             variants={tabsContainerVariants}
           >
             <div className="w-[1230px] lg:w-full ">
-              <div className="flex gap-4 h-full md: md:justify-between items-center ">
+              <div className="flex gap-4 md:gap-0 h-full md: md:justify-between items-center ">
                 <MdKeyboardArrowLeft className="text-[30px] flex md:hidden text-green-100" />
                 {tabs.map((tab) => (
                   <motion.button
