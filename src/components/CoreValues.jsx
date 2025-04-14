@@ -24,12 +24,12 @@ export default function CoreValues() {
       <h3 className="text-[30px] md:text-[42px] font-bold text-green-100">
         Our Core Values
       </h3>
-      <h3 className="text-[18px] text-green-400 w-full md:w-[644px] text-center mt-[10px] px-2">
+      <h3 className="text-[18px] text-green-400 w-full lg:w-[644px] text-center mt-[10px] px-2">
         With a proven track record in bids, sustainability, and business growth,
         we deliver tailored solutions to help companies secure contracts and
         scale.
       </h3>
-      <div className="w-full px-3 md:px-[100px] my-10">
+      <div className="w-full px-3 lg:px-[100px] my-10">
         {items.map((item, index) => (
           <div
             key={index}
