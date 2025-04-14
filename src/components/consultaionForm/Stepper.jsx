@@ -13,7 +13,7 @@ const steps = [1, 2, 3];
 const validationSchemas = [
   Yup.object({
     serviceType: Yup.string().required('Service type is required'),
-    BidWritingSector: Yup.string().required('Please select a sector'),
+    //BidWritingSector: Yup.string().required('Please select a sector'),
   }),
   Yup.object({
     date: Yup.date().required('Please select a date'),
@@ -93,6 +93,7 @@ export default function Stepper() {
                 name: '',
                 email: '',
                 serviceType: '',
+                TechnologyType: '',
                 BidWritingSector: '',
                 phoneNumber: '',
                 message: '',
@@ -140,6 +141,12 @@ export default function Stepper() {
                       {isLastStep ? 'Submit' : 'Proceed'}
                     </button>
                   </div>
+                  <iframe
+                    src="https://calendly.com/taiwoakinfenwa2019/30min" // Replace with your actual Calendly URL
+                    width="100%"
+                    height="600"
+                    frameBorder="0"
+                  ></iframe>
                 </Form>
               )}
             </Formik>

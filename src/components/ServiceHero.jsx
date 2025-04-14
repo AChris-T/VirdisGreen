@@ -11,6 +11,7 @@ import BidWriting from './BidWriting';
 import Sustainability from './Sustainability';
 import Commodity from './Commodity';
 import Technoloy from './Technoloy';
+import { MdKeyboardArrowLeft } from 'react-icons/md';
 
 export default function ServiceHero() {
   const [activeTab, setActiveTab] = useState(1);
@@ -156,8 +157,9 @@ export default function ServiceHero() {
             className="w-full overflow-x-auto no-scrollbar md:p-6"
             variants={tabsContainerVariants}
           >
-            <div className="w-[1220px] lg:w-full">
-              <div className="flex justify-between">
+            <div className="w-[1230px] lg:w-full ">
+              <div className="flex gap-4 h-full md: md:justify-between items-center ">
+                <MdKeyboardArrowLeft className="text-[30px] flex md:hidden text-green-100" />
                 {tabs.map((tab) => (
                   <motion.button
                     key={tab.id}

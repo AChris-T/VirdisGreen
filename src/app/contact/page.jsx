@@ -13,7 +13,6 @@ import FAQ from '@/components/FAQ';
 
 export default function page() {
   const [isLoading, setIsLoading] = useState(false);
-  const [firstSelect, setFirstSelect] = useState('');
 
   const formik = useFormik({
     initialValues: {
@@ -22,6 +21,7 @@ export default function page() {
       inquiryType: '',
       message: '',
       BidSector: '',
+      TechnologyType: '',
     },
     validationSchema: Yup.object({
       fullName: Yup.string().required('Full Name is required'),
@@ -40,6 +40,7 @@ export default function page() {
         inquiry_type: values.inquiryType,
         message: values.message,
         BidSector: values.BidSector,
+        TechnologyType: values.TechnologyType,
       };
 
       emailjs
@@ -257,6 +258,35 @@ export default function page() {
                         {formik.errors.BidSector}
                       </p>
                     ) : null}
+                  </div>
+                )}
+
+                {formik.values.inquiryType === 'Technology Delivery' && (
+                  <div className="flex flex-col gap-2">
+                    <label className="text-green-100 font-medium">
+                      Technology Type
+                    </label>
+                    <div className="border-black-400 border rounded-xl p-4">
+                      <select
+                        name="TechnologyType"
+                        className="w-full  text-green-100  focus:outline-none "
+                        {...formik.getFieldProps('TechnologyTypee')}
+                      >
+                        <option value="">Select a service</option>
+                        <option value="App Development">App Development</option>
+                        <option value="Data Analytics">Data Analytics</option>
+                        <option value="Website Development">
+                          Website Development
+                        </option>
+                        <option value="Cloud Migration">Cloud Migration</option>
+                        <option value="Process Automation">
+                          Process Automation
+                        </option>
+                        <option value="Software Development">
+                          Software Development
+                        </option>
+                      </select>
+                    </div>
                   </div>
                 )}
 
