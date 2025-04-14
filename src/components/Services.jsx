@@ -8,11 +8,11 @@ import House from '../../public/Board.png';
 import roll from '../../public/roll.png';
 import risk from '../../public/Risk.png';
 import fund from '../../public/fund.png';
-import cup from '../../public/cup.png';
+import cup from '../../public/Cup.png';
 import star from '../../public/star.png';
 import leaf from '../../public/leaf.png';
-import Chart from '../../public/Chart.png';
-import Cart from '../../public/Cart.png';
+import Chart from '../../public/chart.png';
+import Cart from '../../public/cart.png';
 
 export default function Services() {
   const containerRef = useRef(null);
