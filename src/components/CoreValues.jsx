@@ -9,18 +9,25 @@ export default function CoreValues() {
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
-
   const items = [
     {
       title: 'Excellence in Bid Success',
       content:
         'We are committed to helping businesses secure contracts through strategic bid writing, procurement expertise, and compliance support. Our tailored approach maximizes success rates, ensuring clients stay competitive in their industries.',
     },
-    { title: 'Sustainable & Ethical Practices', content: '' },
-    { title: 'Innovation & Growth', content: '' },
+    {
+      title: 'Sustainable & Ethical Practices',
+      content:
+        'We are committed to championing responsible, transparent, and future-focused approaches in every solution we provide—ensuring that sustainability and ethical integrity are not just principles, but the foundation of how we work, how we build, and how we impact the communities and industries we serve.',
+    },
+    {
+      title: 'Innovation & Growth',
+      content:
+        'We drive transformation by harnessing the power of creative thinking and forward-looking strategies—delivering solutions that not only address present-day challenges but also enable scalable, long-term growth for our clients, their industries, and the future they envision.',
+    },
   ];
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col  items-center">
       <h3 className="text-[30px] md:text-[42px] font-bold text-green-100">
         Our Core Values
       </h3>
@@ -55,8 +62,8 @@ export default function CoreValues() {
             {/* Content */}
             <div>
               {openIndex === index && item.content && (
-                <div className=" flex gap-2  w-full items-center px-8">
-                  <div className="mb-4 border-l-3 pl-3 border-green-100 text-black-400">
+                <div className=" flex gap-2  w-full items-center px-7">
+                  <div className="mb-4  border-l-3 pl-3 border-green-100 text-black-400">
                     {item.content}
                   </div>
                 </div>

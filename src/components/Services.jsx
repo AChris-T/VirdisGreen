@@ -52,16 +52,16 @@ export default function Services() {
   };
 
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-5  mb-[40px] md:mb-[180px] px-10 md:px-0">
-      <div className="grid w-full md:w-auto grid-cols-1 md:grid-cols-2 mt-20 gap-5">
+    <div className="w-full manrope flex flex-col items-center justify-center gap-5  mb-[60px] px-10 md:px-0">
+      <div className="grid manrope w-full md:w-auto grid-cols-1 md:grid-cols-2 mt-20 gap-5">
         <motion.div
           variants={itemVariants}
           whileHover="hover"
           className="relative group hover:bg-yellow-200 hover:border-[1px] hover:border-green-100 border-[#F4F4F4] border-[2px] px-3 lg:px-[35px] py-[5px] rounded-full"
         >
-          <motion.h3 className="text-xl md:text-2xl flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
+          <motion.h3 className="text-xl lg:text-[40px] flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
             <span className="hidden group-hover:inline-block transition-opacity duration-300">
-              <Image src={Pen} alt="" className="w-6" />
+              <Image src={Pen} alt="" className="w-[40px]" />
             </span>{' '}
             Bid Writing Support
           </motion.h3>
@@ -77,9 +77,9 @@ export default function Services() {
           whileHover="hover"
           className="relative group hover:bg-yellow-200 hover:border-[1px] hover:border-green-100 border-[#F4F4F4] border-[2px] px-3 lg:px-[35px] py-[5px] rounded-full"
         >
-          <motion.h3 className="text-xl md:text-2xl flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
+          <motion.h3 className="text-xl lg:text-[40px] flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
             <span className="hidden group-hover:inline-block transition-opacity duration-300">
-              <Image src={roll} alt="" className="w-6" />
+              <Image src={roll} alt="" className="w-[40px]" />
             </span>{' '}
             Government Tenders{' '}
           </motion.h3>
@@ -95,11 +95,11 @@ export default function Services() {
         <motion.div
           variants={itemVariants}
           whileHover="hover"
-          className="relative group hover:bg-yellow-200 hover:border-[1px] hover:border-green-100 border-[#F4F4F4] border-[2px] px-3 lg:px-[35px] py-[5px] rounded-full"
+          className="relative group hover:bg-yellow-200 hover:border-[1px] hover:border-green-100 border-[#F4F4F4] border-[2px] px-3 lg:px-[15px] py-[5px] rounded-full"
         >
-          <motion.h3 className="text-xl md:text-2xl flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
+          <motion.h3 className="text-xl lg:text-[40px] flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
             <span className="hidden group-hover:inline-block transition-opacity duration-300">
-              <Image src={risk} alt="" className="w-6" />
+              <Image src={risk} alt="" className="w-[40px]" />
             </span>
             Risk Management
           </motion.h3>
@@ -114,11 +114,11 @@ export default function Services() {
         <motion.div
           variants={itemVariants}
           whileHover="hover"
-          className="relative group hover:bg-yellow-200 hover:border-[1px] hover:border-green-100 border-[#F4F4F4] border-[2px] px-3 lg:px-[35px] py-[5px] rounded-full"
+          className="relative group hover:bg-yellow-200 hover:border-[1px] hover:border-green-100 border-[#F4F4F4] border-[2px] px-3 lg:px-[5px] py-[5px] rounded-full"
         >
-          <motion.h3 className="text-xl md:text-2xl flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
+          <motion.h3 className="text-xl lg:text-[40px] flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
             <span className="hidden group-hover:inline-block transition-opacity duration-300">
-              <Image src={House} alt="" className="w-6" />
+              <Image src={House} alt="" className="w-[40px]" />
             </span>
             Strategy{' '}
           </motion.h3>
@@ -133,11 +133,11 @@ export default function Services() {
         <motion.div
           variants={itemVariants}
           whileHover="hover"
-          className="relative group hover:bg-yellow-200 hover:border-[1px] hover:border-green-100 border-[#F4F4F4] border-[2px] px-3 lg:px-[35px] py-[5px] rounded-full"
+          className="relative group hover:bg-yellow-200 hover:border-[1px] hover:border-green-100 border-[#F4F4F4] border-[2px] px-3 lg:px-[15px] py-[5px] rounded-full"
         >
-          <motion.h3 className="text-xl md:text-2xl flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
+          <motion.h3 className="text-xl lg:text-[40px] flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
             <span className="hidden group-hover:inline-block transition-opacity duration-300">
-              <Image src={fund} alt="" className="w-6" />
+              <Image src={fund} alt="" className="w-[40px]" />
             </span>
             Funding & Grants{' '}
           </motion.h3>
@@ -157,9 +157,9 @@ export default function Services() {
           whileHover="hover"
           className="relative group hover:bg-yellow-200 hover:border-[1px] hover:border-green-100 border-[#F4F4F4] border-[2px] px-3 lg:px-[35px] py-[5px] rounded-full"
         >
-          <motion.h3 className="text-xl md:text-2xl flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
+          <motion.h3 className="text-xl lg:text-[40px] flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
             <span className="hidden group-hover:inline-block transition-opacity duration-300">
-              <Image src={cup} alt="" className="w-6" />
+              <Image src={cup} alt="" className="w-[40px]" />
             </span>
             Contract Wins{' '}
           </motion.h3>
@@ -175,9 +175,9 @@ export default function Services() {
           whileHover="hover"
           className="relative group hover:bg-yellow-200 hover:border-[1px] hover:border-green-100 border-[#F4F4F4] border-[2px] px-3 lg:px-[35px] py-[5px] rounded-full"
         >
-          <motion.h3 className="text-xl md:text-2xl flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
+          <motion.h3 className="text-xl lg:text-[40px] flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
             <span className="hidden group-hover:inline-block transition-opacity duration-300">
-              <Image src={star} alt="" className="w-6" />
+              <Image src={star} alt="" className="w-[40px]" />
             </span>
             Innovation{' '}
           </motion.h3>
@@ -193,9 +193,9 @@ export default function Services() {
           whileHover="hover"
           className="relative group hover:bg-yellow-200 hover:border-[1px] hover:border-green-100 border-[#F4F4F4] border-[2px] px-3 lg:px-[35px] py-[5px] rounded-full"
         >
-          <motion.h3 className="text-xl md:text-2xl flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
+          <motion.h3 className="text-xl lg:text-[40px] flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
             <span className="hidden group-hover:inline-block transition-opacity duration-300">
-              <Image src={leaf} alt="" className="w-6" />
+              <Image src={leaf} alt="" className="w-[40px]" />
             </span>
             Sustainability{' '}
           </motion.h3>
@@ -213,9 +213,9 @@ export default function Services() {
           whileHover="hover"
           className="relative group hover:bg-yellow-200 hover:border-[1px] hover:border-green-100 border-[#F4F4F4] border-[2px] px-3 lg:px-[35px] py-[5px] rounded-full"
         >
-          <motion.h3 className="text-xl md:text-2xl flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
+          <motion.h3 className="text-xl lg:text-[40px] flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
             <span className="hidden group-hover:inline-block transition-opacity duration-300">
-              <Image src={Cart} alt="" className="w-6" />
+              <Image src={Cart} alt="" className="w-[40px]" />
             </span>{' '}
             Procurement Expertise{' '}
           </motion.h3>
@@ -231,9 +231,9 @@ export default function Services() {
           whileHover="hover"
           className="relative group hover:bg-yellow-200 hover:border-[1px] hover:border-green-100 border-[#F4F4F4] border-[2px] px-3 lg:px-[35px] py-[5px] rounded-full"
         >
-          <motion.h3 className="text-xl md:text-2xl flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
+          <motion.h3 className="text-xl lg:text-[40px] flex justify-center items-center gap-2 font-medium text-green-100 cursor-pointer">
             <span className="hidden group-hover:inline-block transition-opacity duration-300">
-              <Image src={Chart} alt="" className="w-6" />
+              <Image src={Chart} alt="" className="w-[40px]" />
             </span>{' '}
             Industry Insights{' '}
           </motion.h3>

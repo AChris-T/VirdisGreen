@@ -1,8 +1,12 @@
 @import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 body {
   font-family: 'Outfit', sans-serif;
+}
+.manrope {
+  font-family: 'Manrope', sans-serif;
 }
 @theme {
   --color-green-100: #39551b;
@@ -30,6 +34,18 @@ body {
 /* Optional: Darker green color when hovering over the button */
 .react-day-picker .rdp-nav-button:hover svg {
   fill: #2f855a !important; /* Tailwind's green-800 */
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
 }
 /*
 

@@ -3,11 +3,17 @@ import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import Link from 'next/link';
 import ArrowGreen from '../../public/icons/ArrowGreen';
+import Image from 'next/image';
+import cup from '../../public/Cup.png';
+import fly from '../../public/fly.png';
+import leaf from '../../public/leaf.png';
+import balance from '../../public/balance.png';
 
 const details = [
   {
     id: 1,
     num: 2,
+    img: cup.src,
     title: 'Bid Writing Consulting',
     details: 'Win More Contracts with Expert Bid Writing Services.',
     content:
@@ -16,6 +22,17 @@ const details = [
   {
     id: 2,
     num: 3,
+    img: fly.src,
+    title: 'Technology Delivery Services',
+    details:
+      'From Strategy to Implementation: Technology That Drives Business Value.',
+    content:
+      'Our technology delivery team ensures successful implementation of business-critical systems that deliver measurable ROI.',
+  },
+  {
+    id: 3,
+    num: 4,
+    img: leaf.src,
     title: 'Sustainability Consulting',
     details:
       'Future-Proof Your Business with Strategic Sustainability Solutions.',
@@ -23,21 +40,13 @@ const details = [
       'Our sustainability consultants help UK businesses navigate environmental regulations, improve resource efficiency, and build genuine ESG credentials.',
   },
   {
-    id: 3,
-    num: 4,
+    id: 4,
+    num: 5,
+    img: balance.src,
     title: 'Commodity Management',
     details: 'Optimise Your Supply Chain and Control Costs.',
     content:
       'Our commodity management experts help businesses navigate volatile markets, secure favourable terms, and maintain supply continuity.',
-  },
-  {
-    id: 4,
-    num: 5,
-    title: 'Technology Delivery Services',
-    details:
-      'From Strategy to Implementation: Technology That Drives Business Value.',
-    content:
-      'Our technology delivery team ensures successful implementation of business-critical systems that deliver measurable ROI.',
   },
 ];
 
@@ -111,7 +120,7 @@ export default function AllService({ setActiveTab }) {
           key={detail.id}
           variants={cardVariants}
           whileHover="hover"
-          className="w-full h-[451px] border-[2px] p-[30px] border-black-500 rounded-[30px] flex flex-col justify-between hover:shadow-lg  hover:bg-yellow-200 transition-colors duration-300"
+          className="w-full group h-[451px] border-[2px] p-[30px] border-black-500 hover:border-yellow-200 rounded-[30px] flex flex-col justify-between hover:shadow-lg  hover:bg-yellow-200 transition-colors duration-300"
         >
           <div>
             <motion.h3
@@ -133,14 +142,25 @@ export default function AllService({ setActiveTab }) {
               {detail.content}
             </motion.p>
           </div>
-          <motion.div variants={linkVariants} whileHover="hover">
+          <motion.div
+            variants={linkVariants}
+            whileHover="hover"
+            className="flex justify-between items-baseline"
+          >
             <Link
               href=""
               onClick={() => setActiveTab(detail.num)}
-              className="font-semibold text-[18px] text-green-100 flex gap-2 items-center"
+              className="font-semibold text-[18px] mb-2 text-green-100 flex gap-2 items-center"
             >
               Learn more <ArrowGreen />
             </Link>
+            <Image
+              src={detail.img}
+              alt="lo"
+              className="w-[120px] hidden group-hover:inline-block opacity-30 "
+              width={120}
+              height={120}
+            />
           </motion.div>
         </motion.div>
       ))}

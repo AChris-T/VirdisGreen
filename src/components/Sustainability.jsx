@@ -72,7 +72,7 @@ export default function Sustainability() {
                   alt=""
                   className="w-[50px] h-[50px]"
                 />
-                <h3 className="text-[18px] md:text-[20px] font-medium">
+                <h3 className="text-[18px] text-[#8B988B] md:text-[20px] font-medium">
                   <span className="text-green-100 font-semibold">
                     {detail.title}
                   </span>{' '}

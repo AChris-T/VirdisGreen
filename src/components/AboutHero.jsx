@@ -112,7 +112,7 @@ export default function AboutHero() {
         />
       </motion.div>
       <div className="mt-[30px] md:mt-[111px] flex flex-col justify-center items-center">
-        <h3 className="text-[30px] leading-12 md:text-[64px] text-green-100 lg:w-[800px] text-center w-full md:leading-16">
+        <h3 className="text-[30px] leading-12 md:text-[64px] text-green-100 lg:w-[890px] text-center w-full md:leading-16">
           Viridis Green is not just{' '}
           <p className="relative line-through  text-yellow-100 inline-block">
             another
