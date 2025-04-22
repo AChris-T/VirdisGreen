@@ -120,7 +120,7 @@ export default function AllService({ setActiveTab }) {
           key={detail.id}
           variants={cardVariants}
           whileHover="hover"
-          className="w-full group h-[451px] border-[2px] p-[30px] border-black-500 hover:border-yellow-200 rounded-[30px] flex flex-col justify-between hover:shadow-lg  hover:bg-yellow-200 transition-colors duration-300"
+          className="w-full group h-[470px] border-[2px] p-[30px] border-black-500 hover:border-yellow-200 rounded-[30px] flex flex-col items-end justify-between hover:shadow-lg  hover:bg-yellow-200 transition-colors duration-300"
         >
           <div>
             <motion.h3
@@ -131,7 +131,7 @@ export default function AllService({ setActiveTab }) {
             </motion.h3>
             <motion.h3
               variants={textVariants}
-              className="font-semibold leading-9 md:leading-10 text-[26px] md:text-[32px] mt-[5px] md:mr-[25px] text-green-100"
+              className="font-semibold leading-9 md:leading-10 text-[26px] md:text-[32px] mt-[5px] md:mr-[20px] text-green-100"
             >
               {detail.details}
             </motion.h3>
@@ -150,16 +150,16 @@ export default function AllService({ setActiveTab }) {
             <Link
               href=""
               onClick={() => setActiveTab(detail.num)}
-              className="font-semibold text-[18px] mb-2 text-green-100 flex gap-2 items-center"
+              className="font-semibold text-[18px]  text-green-100 flex gap-2 items-center"
             >
               Learn more <ArrowGreen />
             </Link>
             <Image
               src={detail.img}
               alt="lo"
-              className="w-[120px] hidden group-hover:inline-block opacity-30 "
-              width={120}
-              height={120}
+              className="w-[160px] hidden group-hover:inline-block opacity-30 "
+              width={170}
+              height={170}
             />
           </motion.div>
         </motion.div>

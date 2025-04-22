@@ -85,8 +85,9 @@ export default function page() {
         <Toaster />
         <div className="flex w-full items-start  justify-between  flex-col lg:flex-row mt-[30px] md:mt-[85px] gap-[30px] lg:gap-[10%]">
           <div className="flex flex-col justify-center gap-[50px]  ">
-            <h3 className="text-[30px] md:text-[80px] leading-12  w-full font-semibold md:leading-24 text-green-100 lg:w-[647px] flex justify-center items-center text-center lg:text-start ">
-              Your Next Big Opportunity Starts Here! 🚀
+            <h3 className="text-[30px] flex flex-col md:text-[80px] leading-12  w-full font-semibold md:leading-24 text-green-100 lg:w-[647px] md:text-start  text-center lg:text-start ">
+              Your Next
+              <p>Big Opportunity </p> Starts Here! 🚀
             </h3>
             <div className="lg:grid grid-cols-1 hidden px-3 md:grid-cols-2 justify-center gap-8 md:gap-20 md:mx-20 lg:mx-0">
               <div className="flex flex-col gap-4">
@@ -138,7 +139,7 @@ export default function page() {
               </div>
             </div>
           </div>
-          <div className="w-full flex justify-end border-[2px] border-black-500 shadow-2xl">
+          <div className="w-full flex justify-end  rounded-[22px] border-black-500 shadow-2xl">
             <div className="flex flex-col   w-full p-[32px]">
               <h3 className="text-[24px] font-bold text-green-100 justify-center flex w-full ">
                 Contact Us

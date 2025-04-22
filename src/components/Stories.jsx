@@ -184,7 +184,7 @@ export default function Stories() {
           {testimonials.map((testimonial, index) => (
             <div
               key={testimonial.id}
-              className="bg-green-100 text-white p-8 rounded-lg flex-shrink-0 w-[300px] md:w-[400px] snap-center"
+              className="bg-green-100 text-white flex flex-col justify-between p-8 rounded-lg flex-shrink-0 w-[300px] md:w-[400px] snap-center"
               whilehover="hover"
             >
               <p className="text-lg font-medium mb-6 italic">

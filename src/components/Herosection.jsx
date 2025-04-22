@@ -202,7 +202,7 @@ export default function Herosection() {
             variants={buttonsContainerVariants}
           >
             <motion.div
-              className="px-4 md:px-[32px] text-[14px] md:text-[18px] font-semibold py-4 bg-green-100 cursor-pointer rounded-[12px] text-white"
+              className="px-4 md:px-[32px] text-[16px] md:text-[18px] font-semibold py-4 bg-green-100 cursor-pointer rounded-[12px] text-white"
               custom={0}
               variants={buttonVariants}
               whileHover="hover"

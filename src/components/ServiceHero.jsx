@@ -167,7 +167,7 @@ export default function ServiceHero() {
                     variants={tabVariants}
                     whileHover="hover"
                     whileTap="tap"
-                    className={`px-5 hover:border-1 flex hover:bg-yellow-200 hover:border-green-100 hover:rounded-full items-center text-green-100 gap-[5px] py-2 text-base font-medium focus:outline-none transition-all duration-200
+                    className={`px-5 hover:border-1 flex border-1 rounded-full border-black-500 hover:bg-yellow-200 hover:border-green-100 hover:rounded-full items-center text-green-100 gap-[5px] py-2 text-base font-medium focus:outline-none transition-all duration-200
                       ${
                         activeTab === tab.id
                           ? 'border-1 bg-yellow-200 border-green-100 rounded-full'
