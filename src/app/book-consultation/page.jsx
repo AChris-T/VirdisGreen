@@ -3,15 +3,15 @@ import FacebookIcon from '../../../public/icons/FacebookIcon';
 import TwitterIcon from '../../../public/icons/TwitterIcon';
 import LinkdinIcon from '../../../public/icons/LinkdinIcon';
 import Stepper from '@/components/consultaionForm/Stepper';
-import Script from 'next/script';
+//import Script from 'next/script';
 
 export default function page() {
   return (
     <div className="py-[75px] px-2 md:px-[39px] gap-[10px] flex flex-col">
-      <Script
+      {/*    <Script
         src="https://assets.calendly.com/assets/external/widget.js"
         strategy="beforeInteractive"
-      />
+      /> */}
       <div className="flex w-full items-start  justify-between  flex-col lg:flex-row mt-[30px] md:mt-[85px] gap-[30px] ">
         <div className="flex flex-col justify-center gap-[50px]  ">
           <h3 className="text-[30px] flex flex-col md:text-[80px] leading-12  w-full font-semibold md:leading-24 text-green-100 lg:w-[647px] md:text-start  text-center lg:text-start ">
