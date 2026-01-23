@@ -29,7 +29,6 @@ export default function page() {
         .email('Invalid email address')
         .required('Email is required'),
       inquiryType: Yup.string().required('Please select an inquiry type'),
-      // BidSector: Yup.string().required('Please select an inquiry type'),
       message: Yup.string().required('Message cannot be empty'),
     }),
     onSubmit: (values, { resetForm }) => {
@@ -45,10 +44,10 @@ export default function page() {
 
       emailjs
         .send(
-          'service_f2mzeip',
-          'template_opodawg',
+          'service_08znqmi',
+          'template_k7vjgu3',
           templateParams,
-          '1esO0aga3_Y7FvYtT'
+          'vQtKQClsm9qFgsIo0'
         )
         .then(
           (result) => {
